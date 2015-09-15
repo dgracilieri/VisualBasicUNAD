@@ -80,4 +80,8 @@
     Private Sub ImagenesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ImagenesToolStripMenuItem.Click
         Form15.Show()
     End Sub
+
+    Private Sub MouseToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MouseToolStripMenuItem.Click
+        Form16.Show()
+    End Sub
 End Class
