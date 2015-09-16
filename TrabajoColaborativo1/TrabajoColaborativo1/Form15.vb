@@ -168,4 +168,12 @@
         TextBox3.Size = New System.Drawing.Size(445, 100)
         TextBox3.Text = "Multimedia"
     End Sub
+
+    Private Sub Button5_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Button5.MouseMove
+        Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25, FontStyle.Bold)
+    End Sub
+
+    Private Sub Button5_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.MouseLeave
+        Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25, FontStyle.Regular)
+    End Sub
 End Class

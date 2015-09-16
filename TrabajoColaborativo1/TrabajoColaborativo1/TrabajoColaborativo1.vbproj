@@ -115,6 +115,12 @@
     <Compile Include="Form15.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form16.Designer.vb">
+      <DependentUpon>Form16.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form16.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form2.Designer.vb">
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
@@ -195,6 +201,9 @@
     <EmbeddedResource Include="Form15.resx">
       <DependentUpon>Form15.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form16.resx">
+      <DependentUpon>Form16.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +243,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prueba.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

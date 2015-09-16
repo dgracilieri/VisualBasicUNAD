@@ -84,4 +84,10 @@
     Private Sub MouseToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MouseToolStripMenuItem.Click
         Form16.Show()
     End Sub
+
+    Private Sub ToolStripMenuItem1_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ToolStripMenuItem1.MouseMove
+        ToolStripMenuItem1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25, FontStyle.Bold)
+    End Sub
+
+    
 End Class
