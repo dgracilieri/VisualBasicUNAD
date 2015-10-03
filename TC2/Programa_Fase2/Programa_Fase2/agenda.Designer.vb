@@ -223,7 +223,12 @@ Partial Class agendaf
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(378, 412)
+        Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(378, 412)
         Me.Name = "agendaf"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "agenda"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

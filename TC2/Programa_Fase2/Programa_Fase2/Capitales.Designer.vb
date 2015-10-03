@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class buscar
+Partial Class Capitales
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -26,58 +26,69 @@ Partial Class buscar
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 31)
+        Me.Label1.Location = New System.Drawing.Point(12, 29)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(116, 17)
+        Me.Label1.Size = New System.Drawing.Size(78, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Ingresar posicion"
+        Me.Label1.Text = "Ingrese Ciudad"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(179, 31)
+        Me.TextBox1.Location = New System.Drawing.Point(142, 29)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(75, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(130, 20)
         Me.TextBox1.TabIndex = 1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(15, 95)
+        Me.Button1.Location = New System.Drawing.Point(12, 117)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Buscar"
+        Me.Button1.Text = "Validar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(175, 95)
+        Me.Button2.Location = New System.Drawing.Point(197, 118)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Volver"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'buscar
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(106, 118)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 4
+        Me.Button3.Text = "Borrar"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Capitales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(262, 130)
+        Me.ClientSize = New System.Drawing.Size(284, 153)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(278, 168)
+        Me.MaximumSize = New System.Drawing.Size(300, 191)
         Me.MinimizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(278, 168)
-        Me.Name = "buscar"
-        Me.Text = "buscar"
+        Me.MinimumSize = New System.Drawing.Size(300, 191)
+        Me.Name = "Capitales"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Capitales Sudamerica"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -86,4 +97,5 @@ Partial Class buscar
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

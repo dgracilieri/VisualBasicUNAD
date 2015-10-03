@@ -154,6 +154,7 @@ Partial Class distancia
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "distancia"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "distancia"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

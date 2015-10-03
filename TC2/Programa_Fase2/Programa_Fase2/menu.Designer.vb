@@ -25,7 +25,6 @@ Partial Class menu
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuOpcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ArrayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Op1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Op2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Op3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -34,6 +33,7 @@ Partial Class menu
         Me.Op6ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Op8ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Op9ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -56,14 +56,8 @@ Partial Class menu
         'ArrayToolStripMenuItem
         '
         Me.ArrayToolStripMenuItem.Name = "ArrayToolStripMenuItem"
-        Me.ArrayToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ArrayToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ArrayToolStripMenuItem.Text = "Agenda"
-        '
-        'SalirToolStripMenuItem
-        '
-        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
-        Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'Op1ToolStripMenuItem
         '
@@ -74,44 +68,50 @@ Partial Class menu
         'Op2ToolStripMenuItem
         '
         Me.Op2ToolStripMenuItem.Name = "Op2ToolStripMenuItem"
-        Me.Op2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.Op2ToolStripMenuItem.Text = "op2"
+        Me.Op2ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.Op2ToolStripMenuItem.Text = "Capitales Sudamerica"
         '
         'Op3ToolStripMenuItem
         '
         Me.Op3ToolStripMenuItem.Name = "Op3ToolStripMenuItem"
-        Me.Op3ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.Op3ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Op3ToolStripMenuItem.Text = "op3"
         '
         'Op4ToolStripMenuItem
         '
         Me.Op4ToolStripMenuItem.Name = "Op4ToolStripMenuItem"
-        Me.Op4ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.Op4ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Op4ToolStripMenuItem.Text = "op4"
         '
         'Op5ToolStripMenuItem
         '
         Me.Op5ToolStripMenuItem.Name = "Op5ToolStripMenuItem"
-        Me.Op5ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.Op5ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Op5ToolStripMenuItem.Text = "op5"
         '
         'Op6ToolStripMenuItem
         '
         Me.Op6ToolStripMenuItem.Name = "Op6ToolStripMenuItem"
-        Me.Op6ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.Op6ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Op6ToolStripMenuItem.Text = "op6"
         '
         'Op8ToolStripMenuItem
         '
         Me.Op8ToolStripMenuItem.Name = "Op8ToolStripMenuItem"
-        Me.Op8ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.Op8ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Op8ToolStripMenuItem.Text = "op8"
         '
         'Op9ToolStripMenuItem
         '
         Me.Op9ToolStripMenuItem.Name = "Op9ToolStripMenuItem"
-        Me.Op9ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.Op9ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Op9ToolStripMenuItem.Text = "op9"
+        '
+        'SalirToolStripMenuItem
+        '
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'menu
         '
