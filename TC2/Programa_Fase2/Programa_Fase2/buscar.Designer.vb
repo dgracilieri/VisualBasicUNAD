@@ -67,7 +67,7 @@ Partial Class buscar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(262, 130)
+        Me.ClientSize = New System.Drawing.Size(262, 129)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
@@ -77,6 +77,7 @@ Partial Class buscar
         Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(278, 168)
         Me.Name = "buscar"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "buscar"
         Me.ResumeLayout(False)
         Me.PerformLayout()

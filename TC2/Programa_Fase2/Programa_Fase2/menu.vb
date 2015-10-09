@@ -39,4 +39,8 @@
     Private Sub Op2ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Op2ToolStripMenuItem.Click
         Capitales.Show()
     End Sub
+
+    Private Sub Op3ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Op3ToolStripMenuItem.Click
+        Presupuesto.Show()
+    End Sub
 End Class
