@@ -84,6 +84,12 @@
     <Compile Include="buscar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Calififcaciones.Designer.vb">
+      <DependentUpon>Calififcaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calififcaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Capitales.Designer.vb">
       <DependentUpon>Capitales.vb</DependentUpon>
     </Compile>
@@ -100,6 +106,12 @@
       <DependentUpon>distancia.vb</DependentUpon>
     </Compile>
     <Compile Include="distancia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="matrices.Designer.vb">
+      <DependentUpon>matrices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="matrices.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="menu.Designer.vb">
@@ -136,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="buscar.resx">
       <DependentUpon>buscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calififcaciones.resx">
+      <DependentUpon>Calififcaciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Capitales.resx">
       <DependentUpon>Capitales.vb</DependentUpon>

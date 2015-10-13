@@ -34,8 +34,9 @@ Partial Class menu
         Me.Op8ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Op9ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.OpracionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -51,7 +52,7 @@ Partial Class menu
         '
         'MenuOpcionesToolStripMenuItem
         '
-        Me.MenuOpcionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArrayToolStripMenuItem, Me.Op1ToolStripMenuItem, Me.Op2ToolStripMenuItem, Me.Op3ToolStripMenuItem, Me.Op4ToolStripMenuItem, Me.Op5ToolStripMenuItem, Me.Op6ToolStripMenuItem, Me.Op8ToolStripMenuItem, Me.Op9ToolStripMenuItem})
+        Me.MenuOpcionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArrayToolStripMenuItem, Me.Op1ToolStripMenuItem, Me.Op2ToolStripMenuItem, Me.Op3ToolStripMenuItem, Me.Op4ToolStripMenuItem, Me.Op5ToolStripMenuItem, Me.Op6ToolStripMenuItem, Me.Op8ToolStripMenuItem, Me.Op9ToolStripMenuItem, Me.OpracionesToolStripMenuItem})
         Me.MenuOpcionesToolStripMenuItem.Name = "MenuOpcionesToolStripMenuItem"
         Me.MenuOpcionesToolStripMenuItem.Size = New System.Drawing.Size(101, 20)
         Me.MenuOpcionesToolStripMenuItem.Text = "Menu opciones"
@@ -59,71 +60,62 @@ Partial Class menu
         'ArrayToolStripMenuItem
         '
         Me.ArrayToolStripMenuItem.Name = "ArrayToolStripMenuItem"
-        Me.ArrayToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.ArrayToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
         Me.ArrayToolStripMenuItem.Text = "Agenda"
         '
         'Op1ToolStripMenuItem
         '
         Me.Op1ToolStripMenuItem.Name = "Op1ToolStripMenuItem"
-        Me.Op1ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.Op1ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
         Me.Op1ToolStripMenuItem.Text = "Calculo de distancia"
         '
         'Op2ToolStripMenuItem
         '
         Me.Op2ToolStripMenuItem.Name = "Op2ToolStripMenuItem"
-        Me.Op2ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.Op2ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
         Me.Op2ToolStripMenuItem.Text = "Capitales Sudamerica"
         '
         'Op3ToolStripMenuItem
         '
         Me.Op3ToolStripMenuItem.Name = "Op3ToolStripMenuItem"
-        Me.Op3ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.Op3ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
         Me.Op3ToolStripMenuItem.Text = "Presupuesto"
         '
         'Op4ToolStripMenuItem
         '
         Me.Op4ToolStripMenuItem.Name = "Op4ToolStripMenuItem"
-        Me.Op4ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
-        Me.Op4ToolStripMenuItem.Text = "op4"
+        Me.Op4ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op4ToolStripMenuItem.Text = "Valida palabras"
         '
         'Op5ToolStripMenuItem
         '
         Me.Op5ToolStripMenuItem.Name = "Op5ToolStripMenuItem"
-        Me.Op5ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
-        Me.Op5ToolStripMenuItem.Text = "op5"
+        Me.Op5ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op5ToolStripMenuItem.Text = "Multiplicacion de matrices"
         '
         'Op6ToolStripMenuItem
         '
         Me.Op6ToolStripMenuItem.Name = "Op6ToolStripMenuItem"
-        Me.Op6ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
-        Me.Op6ToolStripMenuItem.Text = "op6"
+        Me.Op6ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op6ToolStripMenuItem.Text = "Calificaciones"
         '
         'Op8ToolStripMenuItem
         '
         Me.Op8ToolStripMenuItem.Name = "Op8ToolStripMenuItem"
-        Me.Op8ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
-        Me.Op8ToolStripMenuItem.Text = "op8"
+        Me.Op8ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op8ToolStripMenuItem.Text = "Adivina"
         '
         'Op9ToolStripMenuItem
         '
         Me.Op9ToolStripMenuItem.Name = "Op9ToolStripMenuItem"
-        Me.Op9ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
-        Me.Op9ToolStripMenuItem.Text = "op9"
+        Me.Op9ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op9ToolStripMenuItem.Text = "Escalar"
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
         Me.SalirToolStripMenuItem.Text = "Salir"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Programa_Fase2.My.Resources.Resources.Logo_UNAD
-        Me.PictureBox1.Location = New System.Drawing.Point(29, 46)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(263, 86)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
@@ -134,6 +126,21 @@ Partial Class menu
         Me.Label1.Size = New System.Drawing.Size(287, 24)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "TRABAJO COLABORATIVO 2"
+        '
+        'OpracionesToolStripMenuItem
+        '
+        Me.OpracionesToolStripMenuItem.Name = "OpracionesToolStripMenuItem"
+        Me.OpracionesToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.OpracionesToolStripMenuItem.Text = "Opraciones"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Programa_Fase2.My.Resources.Resources.Logo_UNAD
+        Me.PictureBox1.Location = New System.Drawing.Point(29, 46)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(263, 86)
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
         '
         'menu
         '
@@ -173,4 +180,5 @@ Partial Class menu
     Friend WithEvents Op9ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents OpracionesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

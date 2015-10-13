@@ -43,4 +43,12 @@
     Private Sub Op3ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Op3ToolStripMenuItem.Click
         Presupuesto.Show()
     End Sub
+
+    Private Sub Op9ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Op9ToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub Op6ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Op6ToolStripMenuItem.Click
+        Calififcaciones.Show()
+    End Sub
 End Class
