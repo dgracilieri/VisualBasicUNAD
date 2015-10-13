@@ -8,29 +8,34 @@
 
     Private Sub ComboBox2_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox2.SelectedIndexChanged
 
-        If ComboBox2.SelectedItem = "Codigo" Then
+        If ComboBox2.SelectedItem = "Codigo" And ComboBox2.Focus Then
             'codigo = InputBox("ingrese el codigo")
             Label12.Visible = True
             TextBox4.Visible = True
             Button6.Visible = True
             codigo = Val(TextBox4.Text)
-        ElseIf ComboBox2.SelectedItem = "Todos" Then
+        ElseIf ComboBox2.SelectedItem = "Todos" And ComboBox2.Focus Then
 
+          
+            Panel6.Visible = True
             Dim i As Integer
-            i = 0
+            DataGridView1.Rows.Add()
             Do
                 Panel6.Visible = True
-                DataGridView1.Rows(i).Cells(0).Value = gastos(codigo, 0)
-                DataGridView1.Rows(i).Cells(1).Value = gastos(codigo, 1)
-                DataGridView1.Rows(i).Cells(2).Value = gastos(codigo, 2)
-                DataGridView1.Rows(i).Cells(3).Value = gastos(codigo, 3)
-                DataGridView1.Rows.Add()
+                DataGridView1.Rows(i).Cells(0).Value = gastos(i, 0)
+                DataGridView1.Rows(i).Cells(1).Value = gastos(i, 1)
+                DataGridView1.Rows(i).Cells(2).Value = gastos(i, 2)
+                DataGridView1.Rows(i).Cells(3).Value = gastos(i, 3)
+
                 i = i + 1
 
             Loop While gastos(i, 0) <> ""
+        Else
+                Panel6.Visible = False
+
         End If
 
-        
+
 
 
     End Sub
@@ -69,6 +74,8 @@
         cont = 0
         Dim restante As Double
         restante = Val(Label11.Text)
+
+
 
 
 
@@ -158,4 +165,6 @@
 
 
     End Sub
+
+   
 End Class
