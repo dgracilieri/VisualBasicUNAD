@@ -30,8 +30,11 @@
                 i = i + 1
 
             Loop While gastos(i, 0) <> ""
+        
+
+
         Else
-                Panel6.Visible = False
+            Panel6.Visible = False
 
         End If
 
@@ -97,10 +100,7 @@
                 DateTimePicker1.Checked = False
             Else
                 Label11.Text = Val(Label11.Text) - Val(TextBox2.Text)
-                ProgressBar1.Maximum = Val(dinero)
-                Dim aux As Double
-                aux = ((Val(TextBox2.Text) * Val(dinero)) / 100)
-                ProgressBar1.Increment(aux)
+               
 
 
                 If gastos(0, 0) = "" Then

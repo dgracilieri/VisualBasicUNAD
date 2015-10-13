@@ -43,7 +43,6 @@ Partial Class Presupuesto
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -51,8 +50,6 @@ Partial Class Presupuesto
         Me.Button3 = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -232,7 +229,6 @@ Partial Class Presupuesto
         '
         Me.Panel5.Controls.Add(Me.Button6)
         Me.Panel5.Controls.Add(Me.Label12)
-        Me.Panel5.Controls.Add(Me.DateTimePicker2)
         Me.Panel5.Controls.Add(Me.TextBox4)
         Me.Panel5.Controls.Add(Me.ComboBox2)
         Me.Panel5.Controls.Add(Me.Label9)
@@ -260,14 +256,6 @@ Partial Class Presupuesto
         Me.Label12.TabIndex = 15
         Me.Label12.Text = "Ingrese codigo"
         Me.Label12.Visible = False
-        '
-        'DateTimePicker2
-        '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(18, 82)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(212, 20)
-        Me.DateTimePicker2.TabIndex = 14
-        Me.DateTimePicker2.Visible = False
         '
         'TextBox4
         '
@@ -302,8 +290,6 @@ Partial Class Presupuesto
         Me.Panel3.Controls.Add(Me.Button3)
         Me.Panel3.Controls.Add(Me.DateTimePicker1)
         Me.Panel3.Controls.Add(Me.Label7)
-        Me.Panel3.Controls.Add(Me.ProgressBar1)
-        Me.Panel3.Controls.Add(Me.Label6)
         Me.Panel3.Controls.Add(Me.Button2)
         Me.Panel3.Controls.Add(Me.TextBox3)
         Me.Panel3.Controls.Add(Me.ComboBox1)
@@ -342,23 +328,6 @@ Partial Class Presupuesto
         Me.Label7.Size = New System.Drawing.Size(82, 17)
         Me.Label7.TabIndex = 9
         Me.Label7.Text = "Descripcion"
-        '
-        'ProgressBar1
-        '
-        Me.ProgressBar1.Location = New System.Drawing.Point(155, 103)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(252, 17)
-        Me.ProgressBar1.TabIndex = 8
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(13, 103)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(122, 17)
-        Me.Label6.TabIndex = 7
-        Me.Label6.Text = "% Dinero utilizado"
         '
         'Button2
         '
@@ -466,7 +435,6 @@ Partial Class Presupuesto
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
@@ -474,7 +442,6 @@ Partial Class Presupuesto
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
@@ -483,7 +450,6 @@ Partial Class Presupuesto
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
