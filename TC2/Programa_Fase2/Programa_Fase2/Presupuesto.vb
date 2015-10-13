@@ -19,12 +19,14 @@
             Dim i As Integer
             i = 0
             Do
+                Panel6.Visible = True
                 DataGridView1.Rows(i).Cells(0).Value = gastos(codigo, 0)
                 DataGridView1.Rows(i).Cells(1).Value = gastos(codigo, 1)
                 DataGridView1.Rows(i).Cells(2).Value = gastos(codigo, 2)
                 DataGridView1.Rows(i).Cells(3).Value = gastos(codigo, 3)
                 DataGridView1.Rows.Add()
                 i = i + 1
+
             Loop While gastos(i, 0) <> ""
         End If
 
