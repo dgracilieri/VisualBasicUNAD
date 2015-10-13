@@ -100,8 +100,6 @@
                 DateTimePicker1.Checked = False
             Else
                 Label11.Text = Val(Label11.Text) - Val(TextBox2.Text)
-               
-
 
                 If gastos(0, 0) = "" Then
                     gastos(cont, 0) = TextBox2.Text
