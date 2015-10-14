@@ -47,7 +47,7 @@ Partial Class buscar
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(15, 95)
+        Me.Button1.Location = New System.Drawing.Point(94, 95)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
@@ -56,7 +56,7 @@ Partial Class buscar
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(175, 95)
+        Me.Button2.Location = New System.Drawing.Point(179, 95)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
@@ -67,6 +67,7 @@ Partial Class buscar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(262, 129)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)

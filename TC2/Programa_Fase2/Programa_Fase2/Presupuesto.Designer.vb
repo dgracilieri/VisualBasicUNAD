@@ -268,7 +268,7 @@ Partial Class Presupuesto
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Todos", "Fecha", "Tipo", "Codigo"})
+        Me.ComboBox2.Items.AddRange(New Object() {"Todos", "Codigo"})
         Me.ComboBox2.Location = New System.Drawing.Point(18, 45)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(137, 21)

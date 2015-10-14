@@ -33,9 +33,9 @@ Partial Class menu
         Me.Op6ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Op8ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Op9ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpracionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.OpracionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -111,6 +111,12 @@ Partial Class menu
         Me.Op9ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
         Me.Op9ToolStripMenuItem.Text = "Escalar"
         '
+        'OpracionesToolStripMenuItem
+        '
+        Me.OpracionesToolStripMenuItem.Name = "OpracionesToolStripMenuItem"
+        Me.OpracionesToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.OpracionesToolStripMenuItem.Text = "Opraciones"
+        '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
@@ -127,12 +133,6 @@ Partial Class menu
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "TRABAJO COLABORATIVO 2"
         '
-        'OpracionesToolStripMenuItem
-        '
-        Me.OpracionesToolStripMenuItem.Name = "OpracionesToolStripMenuItem"
-        Me.OpracionesToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
-        Me.OpracionesToolStripMenuItem.Text = "Opraciones"
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Programa_Fase2.My.Resources.Resources.Logo_UNAD
@@ -147,7 +147,7 @@ Partial Class menu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(884, 562)
+        Me.ClientSize = New System.Drawing.Size(884, 561)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)

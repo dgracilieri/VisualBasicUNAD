@@ -39,14 +39,16 @@
 
 
         Else
-            contactos.Label7.Text = agendaf.agenda(Val(TextBox1.Text) - 1, 0)
-            contactos.Label8.Text = agendaf.agenda(Val(TextBox1.Text) - 1, 1)
-            contactos.Label9.Text = agendaf.agenda(Val(TextBox1.Text) - 1, 2)
-            contactos.Label10.Text = agendaf.agenda(Val(TextBox1.Text) - 1, 3)
-            contactos.Label11.Text = agendaf.agenda(Val(TextBox1.Text) - 1, 4)
-            contactos.Label12.Text = agendaf.agenda(Val(TextBox1.Text) - 1, 5)
+            
+            buscacontacto.DataGridView1.Rows(0).Cells(0).Value = agendaf.agenda(Val(TextBox1.Text) - 1, 0)
+            buscacontacto.DataGridView1.Rows(0).Cells(1).Value = agendaf.agenda(Val(TextBox1.Text) - 1, 1)
+            buscacontacto.DataGridView1.Rows(0).Cells(2).Value = agendaf.agenda(Val(TextBox1.Text) - 1, 2)
+            buscacontacto.DataGridView1.Rows(0).Cells(3).Value = agendaf.agenda(Val(TextBox1.Text) - 1, 3)
+            buscacontacto.DataGridView1.Rows(0).Cells(4).Value = agendaf.agenda(Val(TextBox1.Text) - 1, 4)
+            buscacontacto.DataGridView1.Rows(0).Cells(5).Value = agendaf.agenda(Val(TextBox1.Text) - 1, 5)
+
             Me.Hide()
-            contactos.Show()
+            buscacontacto.Show()
 
         End If
     End Sub
@@ -70,5 +72,10 @@
 
     Private Sub Button2_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.MouseLeave
         Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25, FontStyle.Regular)
+    End Sub
+
+    
+    Private Sub buscar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

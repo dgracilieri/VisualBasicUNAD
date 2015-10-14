@@ -51,4 +51,8 @@
     Private Sub Op6ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Op6ToolStripMenuItem.Click
         Calififcaciones.Show()
     End Sub
+
+    Private Sub Op4ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Op4ToolStripMenuItem.Click
+        valida.Show()
+    End Sub
 End Class

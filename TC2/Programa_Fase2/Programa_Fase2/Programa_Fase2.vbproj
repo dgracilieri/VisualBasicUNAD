@@ -78,6 +78,12 @@
     <Compile Include="agenda.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="buscacontacto.Designer.vb">
+      <DependentUpon>buscacontacto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="buscacontacto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="buscar.Designer.vb">
       <DependentUpon>buscar.vb</DependentUpon>
     </Compile>
@@ -94,12 +100,6 @@
       <DependentUpon>Capitales.vb</DependentUpon>
     </Compile>
     <Compile Include="Capitales.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="contactos.Designer.vb">
-      <DependentUpon>contactos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="contactos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="distancia.Designer.vb">
@@ -141,10 +141,19 @@
     <Compile Include="Presupuesto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Valida.Designer.vb">
+      <DependentUpon>Valida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Valida.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="agenda.resx">
       <DependentUpon>agenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscacontacto.resx">
+      <DependentUpon>buscacontacto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="buscar.resx">
       <DependentUpon>buscar.vb</DependentUpon>
@@ -154,9 +163,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Capitales.resx">
       <DependentUpon>Capitales.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="contactos.resx">
-      <DependentUpon>contactos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="distancia.resx">
       <DependentUpon>distancia.vb</DependentUpon>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presupuesto.resx">
       <DependentUpon>Presupuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valida.resx">
+      <DependentUpon>Valida.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
