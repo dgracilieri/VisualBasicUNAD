@@ -55,4 +55,8 @@
     Private Sub Op4ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Op4ToolStripMenuItem.Click
         valida.Show()
     End Sub
+
+    Private Sub Op5ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Op5ToolStripMenuItem.Click
+        matrices.Show()
+    End Sub
 End Class

@@ -60,61 +60,61 @@ Partial Class menu
         'ArrayToolStripMenuItem
         '
         Me.ArrayToolStripMenuItem.Name = "ArrayToolStripMenuItem"
-        Me.ArrayToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.ArrayToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.ArrayToolStripMenuItem.Text = "Agenda"
         '
         'Op1ToolStripMenuItem
         '
         Me.Op1ToolStripMenuItem.Name = "Op1ToolStripMenuItem"
-        Me.Op1ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op1ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.Op1ToolStripMenuItem.Text = "Calculo de distancia"
         '
         'Op2ToolStripMenuItem
         '
         Me.Op2ToolStripMenuItem.Name = "Op2ToolStripMenuItem"
-        Me.Op2ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op2ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.Op2ToolStripMenuItem.Text = "Capitales Sudamerica"
         '
         'Op3ToolStripMenuItem
         '
         Me.Op3ToolStripMenuItem.Name = "Op3ToolStripMenuItem"
-        Me.Op3ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op3ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.Op3ToolStripMenuItem.Text = "Presupuesto"
         '
         'Op4ToolStripMenuItem
         '
         Me.Op4ToolStripMenuItem.Name = "Op4ToolStripMenuItem"
-        Me.Op4ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op4ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.Op4ToolStripMenuItem.Text = "Valida palabras"
         '
         'Op5ToolStripMenuItem
         '
         Me.Op5ToolStripMenuItem.Name = "Op5ToolStripMenuItem"
-        Me.Op5ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
-        Me.Op5ToolStripMenuItem.Text = "Multiplicacion de matrices"
+        Me.Op5ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.Op5ToolStripMenuItem.Text = "Venta tiquetes"
         '
         'Op6ToolStripMenuItem
         '
         Me.Op6ToolStripMenuItem.Name = "Op6ToolStripMenuItem"
-        Me.Op6ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op6ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.Op6ToolStripMenuItem.Text = "Calificaciones"
         '
         'Op8ToolStripMenuItem
         '
         Me.Op8ToolStripMenuItem.Name = "Op8ToolStripMenuItem"
-        Me.Op8ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op8ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.Op8ToolStripMenuItem.Text = "Adivina"
         '
         'Op9ToolStripMenuItem
         '
         Me.Op9ToolStripMenuItem.Name = "Op9ToolStripMenuItem"
-        Me.Op9ToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.Op9ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.Op9ToolStripMenuItem.Text = "Escalar"
         '
         'OpracionesToolStripMenuItem
         '
         Me.OpracionesToolStripMenuItem.Name = "OpracionesToolStripMenuItem"
-        Me.OpracionesToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.OpracionesToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.OpracionesToolStripMenuItem.Text = "Opraciones"
         '
         'SalirToolStripMenuItem
@@ -147,7 +147,7 @@ Partial Class menu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(884, 561)
+        Me.ClientSize = New System.Drawing.Size(884, 562)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)

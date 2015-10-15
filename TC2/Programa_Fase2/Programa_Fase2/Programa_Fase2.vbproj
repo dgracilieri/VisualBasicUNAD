@@ -102,6 +102,12 @@
     <Compile Include="Capitales.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="cargadestino.Designer.vb">
+      <DependentUpon>cargadestino.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cargadestino.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="distancia.Designer.vb">
       <DependentUpon>distancia.vb</DependentUpon>
     </Compile>
@@ -164,8 +170,14 @@
     <EmbeddedResource Include="Capitales.resx">
       <DependentUpon>Capitales.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cargadestino.resx">
+      <DependentUpon>cargadestino.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="distancia.resx">
       <DependentUpon>distancia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="matrices.resx">
+      <DependentUpon>matrices.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.vb</DependentUpon>
