@@ -59,4 +59,8 @@
     Private Sub Op5ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Op5ToolStripMenuItem.Click
         matrices.Show()
     End Sub
+
+    Private Sub Op8ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Op8ToolStripMenuItem.Click
+        Adivina.Show()
+    End Sub
 End Class
