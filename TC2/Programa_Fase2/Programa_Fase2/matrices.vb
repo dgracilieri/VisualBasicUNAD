@@ -5,45 +5,47 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim i, x, j, filasa, filasb, aux As Integer
-     
+        Dim i, j As Byte
 
+        For i = 0 To DataGridView1.RowCount - 1
 
-        filasa = DataGridView1.Rows.GetRowCount(DataGridViewElementStates.Visible)
-        filasb = DataGridView2.Rows.GetRowCount(DataGridViewElementStates.Visible)
+            For j = 0 To DataGridView1.ColumnCount - 1
 
+                DataGridView3.Rows(i).Cells(j).Value = Val(DataGridView1.Rows(i).Cells(j).Value) * Val(DataGridView2.Rows(i).Cells(j).Value)
 
-        If filasa <> filasb Then
-            MsgBox("En necesario que complete los datos de costos y cantidad de viajes", MsgBoxStyle.Information, "Ventas pasajes")
-        Else
+            Next j
 
-            For i = 0 To filasa - 2
-
-                For j = 0 To 3 - 1
-                    aux = Val(DataGridView1.Rows(i).Cells(j).Value) * Val(DataGridView2.Rows(i).Cells(j).Value)
-
-                    DataGridView3.Rows(i).Cells(j).Value = Val(aux)
-
-
-                Next j
-
-
-
-
-            Next i
-
-        End If
-
-
+        Next i
 
     End Sub
 
-    
-    Private Sub DataGridView1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles DataGridView1.KeyPress
 
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        Dim fila As Byte, columna As Byte, i As Integer
 
+        fila = InputBox("Cantidad de ventas")
+        columna = 3
+        DataGridView1.RowCount = fila
+        DataGridView1.ColumnCount = columna
+        DataGridView2.RowCount = fila
+        DataGridView2.ColumnCount = columna
+        DataGridView3.RowCount = fila
+        DataGridView3.ColumnCount = columna
 
-        DataGridView1.Rows(0).HeaderCell.Value = (1 + 1).ToString
+        For i = 0 To columna - 1
+
+            DataGridView1.Columns(i).Width = 100
+            DataGridView2.Columns(i).Width = 100
+            DataGridView3.Columns(i).Width = 100
+
+        Next
+
+        For i = 0 To fila - 1
+            DataGridView1.Rows(i).HeaderCell.Value = "Codigo Venta" + i.ToString
+            DataGridView2.Rows(i).HeaderCell.Value = "Codigo Venta" + i.ToString
+            DataGridView3.Rows(i).HeaderCell.Value = "Codigo Venta" + i.ToString
+
+        Next
 
 
 
@@ -51,19 +53,34 @@
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Dim x, i As Integer
-        x = InputBox("Ingrese la cantidad de datos")
-        Dim precios(x) As Integer
-        For i = 0 To x
 
-            precios(i) = InputBox("Ingrese precio")
-        Next
-        DataGridView1.DataSource = precios
-
-
-        
+        For i = 0 To DataGridView1.RowCount - 1
+            For x = 0 To DataGridView1.ColumnCount - 1
+                DataGridView1.Rows(i).Cells(x).Value = InputBox("Ingrese precio")
+            Next x
+        Next i
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        Dim x, i As Integer
 
+        For i = 0 To DataGridView1.RowCount - 1
+            For x = 0 To DataGridView1.ColumnCount - 1
+                DataGridView2.Rows(i).Cells(x).Value = InputBox("Ingrese precio")
+            Next x
+        Next i
     End Sub
+
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+        Dim x, i As Integer
+
+        For i = 0 To DataGridView1.RowCount - 1
+            For x = 0 To DataGridView1.ColumnCount - 1
+                DataGridView1.Rows(i).Cells(x).Value = ""
+                DataGridView2.Rows(i).Cells(x).Value = ""
+                DataGridView3.Rows(i).Cells(x).Value = ""
+            Next x
+        Next i
+    End Sub
+
 End Class
