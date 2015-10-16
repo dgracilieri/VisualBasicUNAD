@@ -54,15 +54,15 @@
             DataGridView2.Columns(i).Width = 100
             DataGridView2.RowHeadersWidth = 120
             DataGridView3.Columns(i).Width = 100
-            DataGridView3.RowHeadersWidth = 120
+            DataGridView3.RowHeadersWidth = 140
 
 
         Next
 
         For i = 0 To fila - 1
-            DataGridView1.Rows(i).HeaderCell.Value = "Codigo Venta" + i.ToString
-            DataGridView2.Rows(i).HeaderCell.Value = "Codigo Venta" + i.ToString
-            DataGridView3.Rows(i).HeaderCell.Value = "Codigo Venta" + i.ToString
+            DataGridView1.Rows(i).HeaderCell.Value = "Venta N° " + (i + 1).ToString
+            DataGridView2.Rows(i).HeaderCell.Value = "Ventas N° " + (i + 1).ToString
+            DataGridView3.Rows(i).HeaderCell.Value = "Total Venta N°" + (i + 1).ToString
 
         Next
         Button3.Enabled = True
