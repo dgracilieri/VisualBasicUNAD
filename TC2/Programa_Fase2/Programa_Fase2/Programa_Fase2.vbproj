@@ -114,6 +114,12 @@
     <Compile Include="distancia.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="escalar.Designer.vb">
+      <DependentUpon>escalar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="escalar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="matrices.Designer.vb">
       <DependentUpon>matrices.vb</DependentUpon>
     </Compile>
@@ -140,6 +146,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="operaciones.Designer.vb">
+      <DependentUpon>operaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operaciones.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presupuesto.Designer.vb">
       <DependentUpon>Presupuesto.vb</DependentUpon>
@@ -187,6 +199,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operaciones.resx">
+      <DependentUpon>operaciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presupuesto.resx">
       <DependentUpon>Presupuesto.vb</DependentUpon>
