@@ -128,6 +128,7 @@ Partial Class distancia
         '
         'Button1
         '
+        Me.Button1.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button1.Location = New System.Drawing.Point(13, 226)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
@@ -137,6 +138,7 @@ Partial Class distancia
         '
         'Button2
         '
+        Me.Button2.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button2.Location = New System.Drawing.Point(191, 226)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
@@ -146,14 +148,20 @@ Partial Class distancia
         '
         'distancia
         '
+        Me.AcceptButton = Me.Button1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.Button2
         Me.ClientSize = New System.Drawing.Size(281, 262)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(297, 300)
+        Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(297, 300)
         Me.Name = "distancia"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "distancia"

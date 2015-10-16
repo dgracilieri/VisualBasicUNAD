@@ -169,6 +169,7 @@ Partial Class agendaf
         '
         'Button1
         '
+        Me.Button1.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button1.Location = New System.Drawing.Point(30, 331)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
@@ -178,6 +179,7 @@ Partial Class agendaf
         '
         'Button2
         '
+        Me.Button2.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button2.Location = New System.Drawing.Point(241, 331)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
@@ -215,9 +217,11 @@ Partial Class agendaf
         '
         'agendaf
         '
+        Me.AcceptButton = Me.Button2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.Button1
         Me.ClientSize = New System.Drawing.Size(362, 374)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)

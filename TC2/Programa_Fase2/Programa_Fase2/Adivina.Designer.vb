@@ -30,7 +30,6 @@ Partial Class Adivina
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -107,6 +106,7 @@ Partial Class Adivina
         '
         'Button1
         '
+        Me.Button1.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button1.Location = New System.Drawing.Point(580, 349)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
@@ -114,18 +114,9 @@ Partial Class Adivina
         Me.Button1.Text = "Volver"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(477, 349)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Reiniciar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(356, 349)
+        Me.Button3.Location = New System.Drawing.Point(468, 349)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 5
@@ -134,17 +125,23 @@ Partial Class Adivina
         '
         'Adivina
         '
+        Me.AcceptButton = Me.Button3
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.Button1
         Me.ClientSize = New System.Drawing.Size(674, 396)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(690, 434)
+        Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(690, 434)
         Me.Name = "Adivina"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Adivina"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
@@ -161,6 +158,5 @@ Partial Class Adivina
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

@@ -91,6 +91,7 @@ Partial Class Presupuesto
         '
         'Button1
         '
+        Me.Button1.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button1.Location = New System.Drawing.Point(15, 94)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(57, 23)
@@ -393,6 +394,7 @@ Partial Class Presupuesto
         '
         'Button5
         '
+        Me.Button5.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button5.Location = New System.Drawing.Point(804, 533)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(57, 23)
@@ -405,9 +407,14 @@ Partial Class Presupuesto
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.Button5
         Me.ClientSize = New System.Drawing.Size(878, 562)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Panel2)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(894, 600)
+        Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(894, 600)
         Me.Name = "Presupuesto"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Manejo Presupuesto"
