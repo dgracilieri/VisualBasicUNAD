@@ -33,7 +33,6 @@ Partial Class menu
         Me.Op6ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Op8ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Op9ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpracionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -52,7 +51,7 @@ Partial Class menu
         '
         'MenuOpcionesToolStripMenuItem
         '
-        Me.MenuOpcionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArrayToolStripMenuItem, Me.Op1ToolStripMenuItem, Me.Op2ToolStripMenuItem, Me.Op3ToolStripMenuItem, Me.Op4ToolStripMenuItem, Me.Op5ToolStripMenuItem, Me.Op6ToolStripMenuItem, Me.Op8ToolStripMenuItem, Me.Op9ToolStripMenuItem, Me.OpracionesToolStripMenuItem})
+        Me.MenuOpcionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArrayToolStripMenuItem, Me.Op1ToolStripMenuItem, Me.Op2ToolStripMenuItem, Me.Op3ToolStripMenuItem, Me.Op4ToolStripMenuItem, Me.Op5ToolStripMenuItem, Me.Op6ToolStripMenuItem, Me.Op8ToolStripMenuItem, Me.Op9ToolStripMenuItem})
         Me.MenuOpcionesToolStripMenuItem.Name = "MenuOpcionesToolStripMenuItem"
         Me.MenuOpcionesToolStripMenuItem.Size = New System.Drawing.Size(101, 20)
         Me.MenuOpcionesToolStripMenuItem.Text = "Menu opciones"
@@ -111,12 +110,6 @@ Partial Class menu
         Me.Op9ToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.Op9ToolStripMenuItem.Text = "Escalar"
         '
-        'OpracionesToolStripMenuItem
-        '
-        Me.OpracionesToolStripMenuItem.Name = "OpracionesToolStripMenuItem"
-        Me.OpracionesToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
-        Me.OpracionesToolStripMenuItem.Text = "Opraciones"
-        '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
@@ -147,7 +140,7 @@ Partial Class menu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(884, 562)
+        Me.ClientSize = New System.Drawing.Size(884, 561)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -180,5 +173,4 @@ Partial Class menu
     Friend WithEvents Op9ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents OpracionesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

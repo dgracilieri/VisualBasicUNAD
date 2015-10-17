@@ -51,38 +51,7 @@
         If ComboBox1.SelectedItem = "Novato" Then
             adivina = InputBox("Ingrese un numero entre 0 y 100", "Adivine el numero")
            
-            For x = 1 To 15
-
-                If adivina > 100 Or adivina < 0 Then
-                    MsgBox("Debe ingresar un numero que este comprendido entre 0 y 100", MessageBoxIcon.Information, "Adivine el numero")
-                    adivina = InputBox("Ingrese un numero entre 0 y 100", "Adivine el numero")
-                    x = x - 1
-                ElseIf num = adivina Then
-                    MsgBox("Felicidades " + TextBox1.Text + " Adivinaste el numero en tan solo " + x.ToString + " Intentos", MsgBoxStyle.OkOnly, "Adivine el numero")
-                        Exit For
-
-                    Else
-                        MsgBox("Continua te quedan aun " + (15 - Val(x)).ToString + " Intentos", MessageBoxIcon.Information, "Adivine el numero")
-                        If adivina > num Then
-                            MsgBox("El numero ingreso esta por encima del numero buscado", MessageBoxIcon.Information, "Adivine el numero")
-                        Else
-                            MsgBox("El numero ingresado esta por debajo del numero buscado", MessageBoxIcon.Information, "Adivine el numero")
-
-                        End If
-                        adivina = InputBox("Ingrese un numero entre 0 y 100", "Adivine el numero")
-                        If adivina > 100 Or adivina < 0 Then
-                            MsgBox("Debe ingresar un numero que este comprendido entre 0 y 100", MessageBoxIcon.Information, "Adivine el numero")
-                            adivina = InputBox("Ingrese un numero entre 0 y 100", "Adivine el numero")
-
-                        End If
-                    End If
-
-            Next
-
-        ElseIf ComboBox1.SelectedItem = "Avanzado" Then
-            adivina = InputBox("Ingrese un numero entre 0 y 100", "Adivine el numero")
-
-            For x = 1 To 7
+            For x = 1 To 14
 
                 If adivina > 100 Or adivina < 0 Then
                     MsgBox("Debe ingresar un numero que este comprendido entre 0 y 100", MessageBoxIcon.Information, "Adivine el numero")
@@ -93,7 +62,7 @@
                     Exit For
 
                 Else
-                    MsgBox("Continua te quedan aun " + (7 - Val(x)).ToString + " Intentos", MessageBoxIcon.Information, "Adivine el numero")
+                    MsgBox("Continua te quedan aun " + (15 - Val(x)).ToString + " Intentos", MessageBoxIcon.Information, "Adivine el numero")
                     If adivina > num Then
                         MsgBox("El numero ingreso esta por encima del numero buscado", MessageBoxIcon.Information, "Adivine el numero")
                     Else
@@ -109,7 +78,49 @@
                 End If
 
             Next
+
+
+        ElseIf ComboBox1.SelectedItem = "Avanzado" Then
+            adivina = InputBox("Ingrese un numero entre 0 y 100", "Adivine el numero")
+
+            For j = 1 To 6
+
+                If adivina > 100 Or adivina < 0 Then
+                    MsgBox("Debe ingresar un numero que este comprendido entre 0 y 100", MessageBoxIcon.Information, "Adivine el numero")
+                    adivina = InputBox("Ingrese un numero entre 0 y 100", "Adivine el numero")
+                    j = j - 1
+                End If
+
+
+                If num = adivina Then
+                    MsgBox("Felicidades " + TextBox1.Text + " Adivinaste el numero en tan solo " + x.ToString + " Intentos", MsgBoxStyle.OkOnly, "Adivine el numero")
+                    Exit For
+
+                Else
+                    MsgBox("Continua te quedan aun " + (7 - Val(j)).ToString + " Intentos", MessageBoxIcon.Information, "Adivine el numero")
+                    If adivina > num Then
+                        MsgBox("El numero ingreso esta por encima del numero buscado", MessageBoxIcon.Information, "Adivine el numero")
+                    Else
+                        MsgBox("El numero ingresado esta por debajo del numero buscado", MessageBoxIcon.Information, "Adivine el numero")
+
+                    End If
+                    adivina = InputBox("Ingrese un numero entre 0 y 100", "Adivine el numero")
+                    If adivina > 100 Or adivina < 0 Then
+                        MsgBox("Debe ingresar un numero que este comprendido entre 0 y 100", MessageBoxIcon.Information, "Adivine el numero")
+                        adivina = InputBox("Ingrese un numero entre 0 y 100", "Adivine el numero")
+                        j = j - 1
+
+                    End If
+                End If
+
+            Next
+
         End If
+
+        If x = 15 Or j = 7 Then
+            MsgBox("Lo sentimos se acabaron sus intentos, intentelo la proxima vez", MessageBoxIcon.Information, "Adinive el numero")
+        End If
+
     End Sub
     Private Sub Button1_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.MouseHover
         Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25, FontStyle.Bold)
@@ -127,7 +138,5 @@
     End Sub
     
 
-    Private Sub Adivina_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
+    
 End Class
