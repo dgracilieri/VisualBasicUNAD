@@ -45,7 +45,6 @@
     End Sub
 
     Private Sub principal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        conectar()
         consultar.Close()
     End Sub
 

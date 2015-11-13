@@ -7,6 +7,7 @@
         If ComboBox1.SelectedItem = "" Then
             MsgBox("Error debe ingresar un criterio de busqueda", MessageBoxIcon.Error, "Busqueda")
         ElseIf ComboBox1.SelectedItem = "ID" Then
+
             conectar()
             llenarTablaid()
             DataGridView1.Visible = True
@@ -20,7 +21,7 @@
             cerrar()
 
         ElseIf ComboBox1.SelectedItem = "Todos" Then
-            TextBox1.Visible = False
+            'TextBox1.Visible = False
             conectar()
             llenartabla()
             tam = (DataGridView1.Rows.Count - 1) * 35
@@ -77,14 +78,15 @@
         Me.DataGridView1.DataSource = ds.Tables("tabla")
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        TextBox1.Text = ""
-        DataGridView1.Visible = False
-        ComboBox1.SelectedIndex = -1
-        TextBox1.Visible = True
-
+        'TextBox1.Text = ""
+        'DataGridView1.Visible = False
+        'ComboBox1.SelectedIndex = -1
+        'TextBox1.Visible = True
+        limpiar()
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        principal.Show()
         Me.Hide()
     End Sub
 
@@ -93,9 +95,12 @@
         If ComboBox1.SelectedItem = "Todos" Then
             TextBox1.Visible = False
         ElseIf ComboBox1.SelectedItem = "ID" Then
+
             limpiar()
+
         ElseIf ComboBox1.SelectedItem = "Cedula" Then
             limpiar()
+
         End If
     End Sub
     Private Sub Button1_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.MouseHover
