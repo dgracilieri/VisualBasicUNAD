@@ -32,7 +32,6 @@ Partial Class ContenidoMultimedia
         '
         'AxShockwaveFlash1
         '
-        Me.AxShockwaveFlash1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.AxShockwaveFlash1.Enabled = True
         Me.AxShockwaveFlash1.Location = New System.Drawing.Point(0, 0)
         Me.AxShockwaveFlash1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
@@ -66,12 +65,18 @@ Partial Class ContenidoMultimedia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(952, 656)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(968, 694)
+        Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(968, 694)
         Me.Name = "ContenidoMultimedia"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ContenidoMultimedia"
         CType(Me.AxShockwaveFlash1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)

@@ -194,8 +194,14 @@
     <EmbeddedResource Include="consultar.resx">
       <DependentUpon>consultar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ContenidoAlgoritmo.resx">
+      <DependentUpon>ContenidoAlgoritmo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ContenidoBD.resx">
       <DependentUpon>ContenidoBD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContenidoEstructura.resx">
+      <DependentUpon>ContenidoEstructura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ContenidoMultimedia.resx">
       <DependentUpon>ContenidoMultimedia.vb</DependentUpon>
