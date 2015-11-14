@@ -74,6 +74,7 @@ Partial Class ContenidoBD
         '
         'AxShockwaveFlash2
         '
+        Me.AxShockwaveFlash2.AllowDrop = True
         Me.AxShockwaveFlash2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.AxShockwaveFlash2.Enabled = True
         Me.AxShockwaveFlash2.Location = New System.Drawing.Point(0, 0)

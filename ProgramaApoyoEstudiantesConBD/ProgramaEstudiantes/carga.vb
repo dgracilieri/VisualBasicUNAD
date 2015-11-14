@@ -110,6 +110,7 @@
             If buscarced(TextBox1.Text) = 0 Then
                 Dim strsql As String = "insert into estudiantes (identificacion, nombre, direccion, telefono, edad, idarea) "
                 strsql += " VALUES (" & id & ",'" & nom & "','" & dir & "'," & tel & "," & edad & "," & area & ")"
+
                 Dim cmd As New OleDb.OleDbCommand
                 cmd.CommandType = CommandType.Text
                 cmd.Connection = conn
