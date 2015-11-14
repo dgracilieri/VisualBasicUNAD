@@ -83,7 +83,7 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
         If TextBox1.Text = "" Or TextBox2.Text = "" Then
-            MsgBox("-Numero de identificacion" & vbNewLine & "-Nombre completo" & vbNewLine & "-Direccion de residencia" & vbNewLine & "-Telefono" & vbNewLine & "-Edad" & vbNewLine & "-Area", MsgBoxStyle.Information, "Datos minimos para la carga")
+            MsgBox("-Numero de identificacion" & vbNewLine & "-Nombre completo" & vbNewLine & "-Direccion de residencia" & vbNewLine & "-Telefono" & vbNewLine & "-Edad" & vbNewLine & "-Area", MsgBoxStyle.Information, "Carga de Datos")
 
         Else
 
@@ -119,7 +119,7 @@
                 'Informo de errores en la carga del registro
                 Try
                     cmd.ExecuteNonQuery()
-                    MsgBox("Registro Cargado Existosamente", MsgBoxStyle.Information)
+                    MsgBox("Registro Cargado Existosamente", MsgBoxStyle.Information, "Carga de Datos")
                 Catch ex As Exception
                     MsgBox(ex.ToString)
                 End Try
@@ -133,7 +133,7 @@
                 ComboBox1.SelectedIndex = -1
 
             Else
-                MsgBox("La cedukla ya existe en el sistema y no es posible registrar cedulas duplicadas", MessageBoxIcon.Information, "Carga de registros")
+                MsgBox("La cedula ya existe en el sistema y no es posible registrar cedulas duplicadas", MessageBoxIcon.Information, "Carga de Datos")
             End If
         End If
         'Cierro la conexionn a la base de datos
