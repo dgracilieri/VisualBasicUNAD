@@ -78,10 +78,6 @@
         Me.DataGridView1.DataSource = ds.Tables("tabla")
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        'TextBox1.Text = ""
-        'DataGridView1.Visible = False
-        'ComboBox1.SelectedIndex = -1
-        'TextBox1.Visible = True
         limpiar()
     End Sub
 
