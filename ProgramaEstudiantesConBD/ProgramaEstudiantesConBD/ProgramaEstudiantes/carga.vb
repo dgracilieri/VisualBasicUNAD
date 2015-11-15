@@ -28,7 +28,14 @@
         principal.Show()
     End Sub
 
-   
+    Public Sub carga_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        conn.Close()
+    End Sub
+
+    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
+
+    End Sub
+
 
     Private Sub TextBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
         If Char.IsDigit(e.KeyChar) Then
@@ -80,11 +87,11 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
         If TextBox1.Text = "" Or TextBox2.Text = "" Then
-            MsgBox("-Numero de identificacion" & vbNewLine & "-Nombre completo" & vbNewLine & "-Direccion de residencia" & vbNewLine & "-Telefono" & vbNewLine & "-Edad" & vbNewLine & "-Area", MsgBoxStyle.Information, "Carga de Datos")
+            MsgBox("-Numero de identificacion" & vbNewLine & "-Nombre completo" & vbNewLine & "-Direccion de residencia" & vbNewLine & "-Telefono" & vbNewLine & "-Edad" & vbNewLine & "-Programa", MsgBoxStyle.Information, "Datos minimos para la carga")
 
         Else
 
-            Dim id, edad, tel, area As Integer
+            Dim id, edad, tel, prog As Integer
             Dim nom, dir As String
             id = TextBox1.Text
             edad = TextBox5.Text
@@ -92,52 +99,54 @@
             nom = TextBox2.Text
             dir = TextBox3.Text
 
-            If ComboBox1.SelectedItem = "Algoritmos" Then
-                area = 1
-            ElseIf ComboBox1.SelectedItem = "Estructuras de programacion basica en Visual Basic" Then
-                area = 2
-            ElseIf ComboBox1.SelectedItem = "Base de Datos" Then
-                area = 3
-            ElseIf ComboBox1.SelectedItem = "Multimedia" Then
-                area = 4
+            If ComboBox1.SelectedItem = "Derecho" Then
+                prog = 6
+            ElseIf ComboBox1.SelectedItem = "Ing. Sistemas" Then
+                prog = 1
+            ElseIf ComboBox1.SelectedItem = "Ing. Telecomunicaciones" Then
+                prog = 2
+            ElseIf ComboBox1.SelectedItem = "Psicologia" Then
+                prog = 4
+            ElseIf ComboBox1.SelectedItem = "Economia" Then
+                prog = 5
+            ElseIf ComboBox1.SelectedItem = "Agronomia" Then
+                prog = 3
+            ElseIf ComboBox1.SelectedItem = "Filosofia" Then
+                prog = 7
+            ElseIf ComboBox1.SelectedItem = "Sociologia" Then
+                prog = 5
+
+
+
             End If
             'Llamo a la funcion para realizar la conexion a la base de datos
             conectar()
-            'Valido si existe un registro con esa cedula ingresado previamente
-            If buscarced(TextBox1.Text) = 0 Then
-                Dim strsql As String = "insert into estudiantes (identificacion, nombre, direccion, telefono, edad, idarea) "
-                strsql += " VALUES (" & id & ",'" & nom & "','" & dir & "'," & tel & "," & edad & "," & area & ")"
-
-                Dim cmd As New OleDb.OleDbCommand
-                cmd.CommandType = CommandType.Text
-                cmd.Connection = conn
-                cmd.CommandText = strsql
+            Dim strsql As String = "insert into estudiantes (identificacion, nombre, direccion, telefono, edad, idprograma) "
+            strsql += " VALUES (" & id & ",'" & nom & "','" & dir & "'," & tel & "," & edad & "," & prog & ")"
+            Dim cmd As New OleDb.OleDbCommand
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = conn
+            cmd.CommandText = strsql
 
 
-                'Informo de errores en la carga del registro
-                Try
-                    cmd.ExecuteNonQuery()
-                    MsgBox("Registro Cargado Existosamente", MsgBoxStyle.Information, "Carga de Datos")
+            'Informo de errores en la carga del registro
+            Try
+                cmd.ExecuteNonQuery()
+                MsgBox("Registro cargado", MsgBoxStyle.Information)
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
 
-                Catch ex As Exception
-                    MsgBox(ex.ToString)
-                End Try
+            'Limpio formulario de carga de datos
+            TextBox1.Text = ""
+            TextBox2.Text = ""
+            TextBox3.Text = ""
+            TextBox4.Text = ""
+            TextBox5.Text = ""
+            ComboBox1.SelectedIndex = -1
+            cerrar()
 
-                'Limpio formulario de carga de datos
-                TextBox1.Text = ""
-                TextBox2.Text = ""
-                TextBox3.Text = ""
-                TextBox4.Text = ""
-                TextBox5.Text = ""
-                ComboBox1.SelectedIndex = -1
-
-            Else
-                MsgBox("La cedula ya existe en el sistema y no es posible registrar cedulas duplicadas", MessageBoxIcon.Information, "Carga de Datos")
-            End If
         End If
-        cerrar()
-        'Cierro la conexionn a la base de datos
-
 
 
     End Sub
@@ -156,8 +165,7 @@
         Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25, FontStyle.Regular)
     End Sub
 
-
-    Private Sub carga_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
 
     End Sub
 End Class

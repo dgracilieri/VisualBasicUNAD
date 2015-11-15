@@ -67,20 +67,10 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\multimedia.accdb")>  _
-        Public ReadOnly Property multimediaConnectionString() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\estudiantes.accdb")>  _
+        Public ReadOnly Property estudiantesConnectionString() As String
             Get
-                Return CType(Me("multimediaConnectionString"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\multimedia2.accdb")>  _
-        Public ReadOnly Property multimedia2ConnectionString() As String
-            Get
-                Return CType(Me("multimedia2ConnectionString"),String)
+                Return CType(Me("estudiantesConnectionString"),String)
             End Get
         End Property
     End Class
@@ -94,9 +84,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.ApoyoEstudiantesconBD.My.MySettings
+        Friend ReadOnly Property Settings() As Global.EstudiantesconBD.My.MySettings
             Get
-                Return Global.ApoyoEstudiantesconBD.My.MySettings.Default
+                Return Global.EstudiantesconBD.My.MySettings.Default
             End Get
         End Property
     End Module
