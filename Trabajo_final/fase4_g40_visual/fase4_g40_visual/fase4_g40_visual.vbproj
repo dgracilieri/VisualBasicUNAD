@@ -6,11 +6,11 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{51A0ECD2-969D-47B8-B43F-418E5BE7E721}</ProjectGuid>
+    <ProjectGuid>{1E0BDD66-3352-44F2-B9EF-083BD873C7AB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>ApoyoEstudiantesconBD.My.MyApplication</StartupObject>
-    <RootNamespace>ApoyoEstudiantesconBD</RootNamespace>
-    <AssemblyName>ProgramaApoyoEstudiantesconBD</AssemblyName>
+    <StartupObject>fase4_g40_visual.My.MyApplication</StartupObject>
+    <RootNamespace>fase4_g40_visual</RootNamespace>
+    <AssemblyName>fase4_g40_visual</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -38,7 +38,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ProgramaApoyoEstudiantesconBD.xml</DocumentationFile>
+    <DocumentationFile>fase4_g40_visual.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -48,7 +48,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ProgramaApoyoEstudiantesconBD.xml</DocumentationFile>
+    <DocumentationFile>fase4_g40_visual.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -66,8 +66,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -87,16 +89,39 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="acceso.Designer.vb">
-      <DependentUpon>acceso.vb</DependentUpon>
+    <Compile Include="AccesoAdmin.Designer.vb">
+      <DependentUpon>AccesoAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="acceso.vb">
+    <Compile Include="AccesoAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="carga.Designer.vb">
-      <DependentUpon>carga.vb</DependentUpon>
+    <Compile Include="AccesoEstudiantes.Designer.vb">
+      <DependentUpon>AccesoEstudiantes.vb</DependentUpon>
     </Compile>
-    <Compile Include="carga.vb">
+    <Compile Include="AccesoEstudiantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alumnosDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>alumnosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AreaAdmin.Designer.vb">
+      <DependentUpon>AreaAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AreaAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaEstudiantes.Designer.vb">
+      <DependentUpon>AreaEstudiantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AreaEstudiantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaEstudio.Designer.vb">
+      <DependentUpon>AreaEstudio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AreaEstudio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="consultar.Designer.vb">
@@ -105,22 +130,16 @@
     <Compile Include="consultar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ContenidoAlgoritmo.Designer.vb">
-      <DependentUpon>ContenidoAlgoritmo.vb</DependentUpon>
+    <Compile Include="ContenidoAlgotirmo.Designer.vb">
+      <DependentUpon>ContenidoAlgotirmo.vb</DependentUpon>
     </Compile>
-    <Compile Include="ContenidoAlgoritmo.vb">
+    <Compile Include="ContenidoAlgotirmo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ContenidoBD.Designer.vb">
-      <DependentUpon>ContenidoBD.vb</DependentUpon>
+    <Compile Include="contenidoBD.Designer.vb">
+      <DependentUpon>contenidoBD.vb</DependentUpon>
     </Compile>
-    <Compile Include="ContenidoBD.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ContenidoEstructura.Designer.vb">
-      <DependentUpon>ContenidoEstructura.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ContenidoEstructura.vb">
+    <Compile Include="contenidoBD.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ContenidoMultimedia.Designer.vb">
@@ -129,32 +148,37 @@
     <Compile Include="ContenidoMultimedia.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="eliminar.Designer.vb">
-      <DependentUpon>eliminar.vb</DependentUpon>
+    <Compile Include="ContenidoVB.Designer.vb">
+      <DependentUpon>ContenidoVB.vb</DependentUpon>
     </Compile>
-    <Compile Include="eliminar.vb">
+    <Compile Include="ContenidoVB.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="funcionesDB.vb" />
-    <Compile Include="mensaje.Designer.vb">
-      <DependentUpon>mensaje.vb</DependentUpon>
+    <Compile Include="Evaluacion.Designer.vb">
+      <DependentUpon>Evaluacion.vb</DependentUpon>
     </Compile>
-    <Compile Include="mensaje.vb">
+    <Compile Include="Evaluacion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="modificar.Designer.vb">
-      <DependentUpon>modificar.vb</DependentUpon>
+    <Compile Include="Insertar.Designer.vb">
+      <DependentUpon>Insertar.vb</DependentUpon>
     </Compile>
-    <Compile Include="modificar.vb">
+    <Compile Include="Insertar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="multimediaDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>multimediaDataSet.xsd</DependentUpon>
+    <Compile Include="Modificar.Designer.vb">
+      <DependentUpon>Modificar.vb</DependentUpon>
     </Compile>
-    <Compile Include="multimediaDataSet.vb">
-      <DependentUpon>multimediaDataSet.xsd</DependentUpon>
+    <Compile Include="Modificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloFunciones.vb" />
+    <Compile Include="principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principal.Designer.vb">
+      <DependentUpon>principal.vb</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -171,43 +195,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="principal.Designer.vb">
-      <DependentUpon>principal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="principal.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="acceso.resx">
-      <DependentUpon>acceso.vb</DependentUpon>
+    <EmbeddedResource Include="AccesoAdmin.resx">
+      <DependentUpon>AccesoAdmin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="carga.resx">
-      <DependentUpon>carga.vb</DependentUpon>
+    <EmbeddedResource Include="AccesoEstudiantes.resx">
+      <DependentUpon>AccesoEstudiantes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="consultar.resx">
-      <DependentUpon>consultar.vb</DependentUpon>
+    <EmbeddedResource Include="AreaAdmin.resx">
+      <DependentUpon>AreaAdmin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ContenidoAlgoritmo.resx">
-      <DependentUpon>ContenidoAlgoritmo.vb</DependentUpon>
+    <EmbeddedResource Include="AreaEstudio.resx">
+      <DependentUpon>AreaEstudio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ContenidoBD.resx">
-      <DependentUpon>ContenidoBD.vb</DependentUpon>
+    <EmbeddedResource Include="Insertar.resx">
+      <DependentUpon>Insertar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ContenidoEstructura.resx">
-      <DependentUpon>ContenidoEstructura.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ContenidoMultimedia.resx">
-      <DependentUpon>ContenidoMultimedia.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="eliminar.resx">
-      <DependentUpon>eliminar.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mensaje.resx">
-      <DependentUpon>mensaje.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="modificar.resx">
-      <DependentUpon>modificar.vb</DependentUpon>
+    <EmbeddedResource Include="principal.resx">
+      <DependentUpon>principal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -215,23 +221,20 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="principal.resx">
-      <DependentUpon>principal.vb</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="multimediaDataSet.xsc">
-      <DependentUpon>multimediaDataSet.xsd</DependentUpon>
+    <None Include="alumnosDataSet.xsc">
+      <DependentUpon>alumnosDataSet.xsd</DependentUpon>
     </None>
-    <None Include="multimediaDataSet.xsd">
+    <None Include="alumnosDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>multimediaDataSet.Designer.vb</LastGenOutput>
+      <LastGenOutput>alumnosDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="multimediaDataSet.xss">
-      <DependentUpon>multimediaDataSet.xsd</DependentUpon>
+    <None Include="alumnosDataSet.xss">
+      <DependentUpon>alumnosDataSet.xsd</DependentUpon>
     </None>
+    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -244,6 +247,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo_UNAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
@@ -266,35 +272,26 @@
       <ProductName>SQL Server Compact 3.5 SP2</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
       <Visible>False</Visible>
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="multimedia.accdb">
+    <Content Include="alumnos.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <COMReference Include="AxShockwaveFlashObjects">
-      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
-      <Isolated>False</Isolated>
-    </COMReference>
-    <COMReference Include="ShockwaveFlashObjects">
-      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
