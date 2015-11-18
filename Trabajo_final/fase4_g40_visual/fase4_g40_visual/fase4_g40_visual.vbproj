@@ -209,8 +209,14 @@
     <EmbeddedResource Include="AreaEstudio.resx">
       <DependentUpon>AreaEstudio.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="consultar.resx">
+      <DependentUpon>consultar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Insertar.resx">
       <DependentUpon>Insertar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar.resx">
+      <DependentUpon>Modificar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="principal.resx">
       <DependentUpon>principal.vb</DependentUpon>

@@ -1,6 +1,7 @@
 ﻿Module ModuloFunciones
     Public cont As Integer = 0
     Public strsql As String
+    Public area As String
     Public conn As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & _
      Application.StartupPath & "\alumnos.accdb")
     Public Sub conectar()
@@ -65,5 +66,28 @@
         dr.Close()
     End Function
 
+    Public Sub limpiar()
+        Insertar.TextBox1.Text = ""
+        Insertar.TextBox2.Text = ""
+        Insertar.TextBox3.Text = ""
+        Insertar.TextBox4.Text = ""
+        Insertar.TextBox5.Text = ""
+    End Sub
+
+    Public Sub limpiar2()
+        consultar.TextBox1.Text = ""
+        consultar.TextBox1.Visible = True
+        consultar.DataGridView1.Visible = False
+        consultar.Size = New Size(877, 293)
+    End Sub
+    Public Sub limpiar3()
+        Modificar.TextBox1.Text = ""
+        Modificar.TextBox2.Text = ""
+        Modificar.TextBox3.Text = ""
+        Modificar.TextBox4.Text = ""
+        Modificar.TextBox5.Text = ""
+        Modificar.TextBox6.Text = ""
+        Modificar.ComboBox1.SelectedIndex = -1
+    End Sub
 
 End Module
