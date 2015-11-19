@@ -76,7 +76,7 @@ Partial Class AccesoEstudiantes
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(153, 78)
-        Me.TextBox2.MaxLength = 5
+        Me.TextBox2.MaxLength = 30
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
