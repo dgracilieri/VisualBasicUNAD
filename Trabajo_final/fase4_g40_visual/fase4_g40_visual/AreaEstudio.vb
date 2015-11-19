@@ -33,4 +33,25 @@
     Private Sub AreaEstudio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Dim contenido As String
+        contenido = ComboBox1.SelectedItem
+        MsgBox(contenido.ToString)
+
+        If contenido = "Algoritmo" Then
+            ContenidoAlgotirmo.Show()
+            Me.Close()
+        ElseIf contenido = "Estructura de datos en Visual Basic" Then
+            ContenidoVB.Show()
+            Me.Close()
+        ElseIf contenido = "Bases de datos" Then
+            contenidoBD.Show()
+            Me.Close()
+        ElseIf contenido = "Multimedia" Then
+            ContenidoMultimedia.Show()
+            Me.Close()
+
+        End If
+    End Sub
 End Class
