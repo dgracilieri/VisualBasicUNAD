@@ -48,6 +48,14 @@
         Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25, FontStyle.Regular)
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Dim cedula, clave As String
+        cedula = TextBox1.Text
+        clave = TextBox2.Text
 
+        If buscarced(cedula) = 1 Then
+            MsgBox("Existe")
+        Else
+            MsgBox("No existe")
+        End If
     End Sub
 End Class

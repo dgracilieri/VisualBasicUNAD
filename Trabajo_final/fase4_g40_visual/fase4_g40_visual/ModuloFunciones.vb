@@ -30,7 +30,7 @@ Module ModuloFunciones
 
         Try
             dr = cmd.ExecuteReader
-            If dr.HasRows Then
+            If dr.HasRows = True Then
 
                 Return 1
             Else
@@ -54,7 +54,7 @@ Module ModuloFunciones
 
         Try
             dr = cmd.ExecuteReader
-            If dr.HasRows Then
+            If dr.HasRows = True Then
 
                 Return 1
             Else
