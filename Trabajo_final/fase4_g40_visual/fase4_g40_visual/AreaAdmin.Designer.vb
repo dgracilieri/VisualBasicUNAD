@@ -194,11 +194,13 @@ Partial Class AreaAdmin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(840, 524)
+        Me.ClientSize = New System.Drawing.Size(840, 523)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(856, 562)
+        Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(856, 562)
         Me.Name = "AreaAdmin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

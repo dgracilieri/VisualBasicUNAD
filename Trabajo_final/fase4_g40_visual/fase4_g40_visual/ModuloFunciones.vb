@@ -1,13 +1,14 @@
-﻿Module ModuloFunciones
+﻿Imports System.Data.OleDb
+Module ModuloFunciones
+
     Public cont As Integer = 0
-    Public strsql As String
-    Public area As String
+    Public strsql, valor, area As String
     Public conn As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & _
-     Application.StartupPath & "\alumnos.accdb")
+    Application.StartupPath & "\alumnos.accdb")
+    
     Public Sub conectar()
         Try
             conn.Open()
-            'MsgBox("exito")
         Catch ex As Exception
             MsgBox(ex.ToString)
 
@@ -72,6 +73,7 @@
         Insertar.TextBox3.Text = ""
         Insertar.TextBox4.Text = ""
         Insertar.TextBox5.Text = ""
+        Insertar.TextBox6.Text = ""
     End Sub
 
     Public Sub limpiar2()
@@ -89,5 +91,7 @@
         Modificar.TextBox6.Text = ""
         Modificar.ComboBox1.SelectedIndex = -1
     End Sub
+
+
 
 End Module

@@ -303,6 +303,8 @@ Partial Public Class alumnosDataSet
         
         Private columncalificacion_vb As Global.System.Data.DataColumn
         
+        Private columnclave As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -419,6 +421,14 @@ Partial Public Class alumnosDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property claveColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnclave
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -455,9 +465,9 @@ Partial Public Class alumnosDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddestudianteRow(ByVal codigo As Integer, ByVal nombre As String, ByVal direccion As String, ByVal telefono As Integer, ByVal edad As Integer, ByVal calif_bd As Decimal, ByVal calif_algoritmo As Decimal, ByVal calif_multi As Decimal, ByVal calificacion_vb As Decimal) As estudianteRow
+        Public Overloads Function AddestudianteRow(ByVal codigo As Integer, ByVal nombre As String, ByVal direccion As String, ByVal telefono As Integer, ByVal edad As Integer, ByVal calif_bd As Decimal, ByVal calif_algoritmo As Decimal, ByVal calif_multi As Decimal, ByVal calificacion_vb As Decimal, ByVal clave As String) As estudianteRow
             Dim rowestudianteRow As estudianteRow = CType(Me.NewRow,estudianteRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, codigo, nombre, direccion, telefono, edad, calif_bd, calif_algoritmo, calif_multi, calificacion_vb}
+            Dim columnValuesArray() As Object = New Object() {Nothing, codigo, nombre, direccion, telefono, edad, calif_bd, calif_algoritmo, calif_multi, calificacion_vb, clave}
             rowestudianteRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowestudianteRow)
             Return rowestudianteRow
@@ -496,6 +506,7 @@ Partial Public Class alumnosDataSet
             Me.columncalif_algoritmo = MyBase.Columns("calif_algoritmo")
             Me.columncalif_multi = MyBase.Columns("calif_multi")
             Me.columncalificacion_vb = MyBase.Columns("calificacion_vb")
+            Me.columnclave = MyBase.Columns("clave")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -521,16 +532,17 @@ Partial Public Class alumnosDataSet
             MyBase.Columns.Add(Me.columncalif_multi)
             Me.columncalificacion_vb = New Global.System.Data.DataColumn("calificacion_vb", GetType(Decimal), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columncalificacion_vb)
+            Me.columnclave = New Global.System.Data.DataColumn("clave", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnclave)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnId}, true))
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint2", New Global.System.Data.DataColumn() {Me.columncodigo}, false))
             Me.columnId.AutoIncrement = true
             Me.columnId.AutoIncrementSeed = -1
             Me.columnId.AutoIncrementStep = -1
             Me.columnId.AllowDBNull = false
             Me.columnId.Unique = true
-            Me.columncodigo.Unique = true
-            Me.columnnombre.MaxLength = 100
-            Me.columndireccion.MaxLength = 100
+            Me.columnnombre.MaxLength = 536870910
+            Me.columndireccion.MaxLength = 536870910
+            Me.columnclave.MaxLength = 536870910
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -823,6 +835,21 @@ Partial Public Class alumnosDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property clave() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableestudiante.claveColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'clave' de la tabla 'estudiante' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableestudiante.claveColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IscodigoNull() As Boolean
             Return Me.IsNull(Me.tableestudiante.codigoColumn)
         End Function
@@ -927,6 +954,18 @@ Partial Public Class alumnosDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub Setcalificacion_vbNull()
             Me(Me.tableestudiante.calificacion_vbColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsclaveNull() As Boolean
+            Return Me.IsNull(Me.tableestudiante.claveColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetclaveNull()
+            Me(Me.tableestudiante.claveColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -1106,6 +1145,7 @@ Namespace alumnosDataSetTableAdapters
             tableMapping.ColumnMappings.Add("calif_algoritmo", "calif_algoritmo")
             tableMapping.ColumnMappings.Add("calif_multi", "calif_multi")
             tableMapping.ColumnMappings.Add("calificacion_vb", "calificacion_vb")
+            tableMapping.ColumnMappings.Add("clave", "clave")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
@@ -1134,8 +1174,8 @@ Namespace alumnosDataSetTableAdapters
             Me._adapter.InsertCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO `estudiante` (`codigo`, `nombre`, `direccion`, `telefono`, `edad`, `c"& _ 
-                "alif_bd`, `calif_algoritmo`, `calif_multi`, `calificacion_vb`) VALUES (?, ?, ?, "& _ 
-                "?, ?, ?, ?, ?, ?)"
+                "alif_bd`, `calif_algoritmo`, `calif_multi`, `calificacion_vb`, `clave`) VALUES ("& _ 
+                "?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("codigo", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "codigo", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("nombre", Global.System.Data.OleDb.OleDbType.LongVarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "nombre", Global.System.Data.DataRowVersion.Current, false, Nothing))
@@ -1146,16 +1186,17 @@ Namespace alumnosDataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("calif_algoritmo", Global.System.Data.OleDb.OleDbType.Numeric, 0, Global.System.Data.ParameterDirection.Input, CType(18,Byte), CType(0,Byte), "calif_algoritmo", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("calif_multi", Global.System.Data.OleDb.OleDbType.Numeric, 0, Global.System.Data.ParameterDirection.Input, CType(18,Byte), CType(0,Byte), "calif_multi", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("calificacion_vb", Global.System.Data.OleDb.OleDbType.Numeric, 0, Global.System.Data.ParameterDirection.Input, CType(18,Byte), CType(0,Byte), "calificacion_vb", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("clave", Global.System.Data.OleDb.OleDbType.LongVarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "clave", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE `estudiante` SET `codigo` = ?, `nombre` = ?, `direccion` = ?, `telefono` ="& _ 
                 " ?, `edad` = ?, `calif_bd` = ?, `calif_algoritmo` = ?, `calif_multi` = ?, `calif"& _ 
-                "icacion_vb` = ? WHERE ((`Id` = ?) AND ((? = 1 AND `codigo` IS NULL) OR (`codigo`"& _ 
-                " = ?)) AND ((? = 1 AND `telefono` IS NULL) OR (`telefono` = ?)) AND ((? = 1 AND "& _ 
-                "`edad` IS NULL) OR (`edad` = ?)) AND ((? = 1 AND `calif_bd` IS NULL) OR (`calif_"& _ 
-                "bd` = ?)) AND ((? = 1 AND `calif_algoritmo` IS NULL) OR (`calif_algoritmo` = ?))"& _ 
-                " AND ((? = 1 AND `calif_multi` IS NULL) OR (`calif_multi` = ?)) AND ((? = 1 AND "& _ 
-                "`calificacion_vb` IS NULL) OR (`calificacion_vb` = ?)))"
+                "icacion_vb` = ?, `clave` = ? WHERE ((`Id` = ?) AND ((? = 1 AND `codigo` IS NULL)"& _ 
+                " OR (`codigo` = ?)) AND ((? = 1 AND `telefono` IS NULL) OR (`telefono` = ?)) AND"& _ 
+                " ((? = 1 AND `edad` IS NULL) OR (`edad` = ?)) AND ((? = 1 AND `calif_bd` IS NULL"& _ 
+                ") OR (`calif_bd` = ?)) AND ((? = 1 AND `calif_algoritmo` IS NULL) OR (`calif_alg"& _ 
+                "oritmo` = ?)) AND ((? = 1 AND `calif_multi` IS NULL) OR (`calif_multi` = ?)) AND"& _ 
+                " ((? = 1 AND `calificacion_vb` IS NULL) OR (`calificacion_vb` = ?)))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("codigo", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "codigo", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("nombre", Global.System.Data.OleDb.OleDbType.LongVarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "nombre", Global.System.Data.DataRowVersion.Current, false, Nothing))
@@ -1166,6 +1207,7 @@ Namespace alumnosDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("calif_algoritmo", Global.System.Data.OleDb.OleDbType.Numeric, 0, Global.System.Data.ParameterDirection.Input, CType(18,Byte), CType(0,Byte), "calif_algoritmo", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("calif_multi", Global.System.Data.OleDb.OleDbType.Numeric, 0, Global.System.Data.ParameterDirection.Input, CType(18,Byte), CType(0,Byte), "calif_multi", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("calificacion_vb", Global.System.Data.OleDb.OleDbType.Numeric, 0, Global.System.Data.ParameterDirection.Input, CType(18,Byte), CType(0,Byte), "calificacion_vb", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("clave", Global.System.Data.OleDb.OleDbType.LongVarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "clave", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Id", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Id", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_codigo", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "codigo", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_codigo", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "codigo", Global.System.Data.DataRowVersion.Original, false, Nothing))
@@ -1197,7 +1239,7 @@ Namespace alumnosDataSetTableAdapters
             Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT Id, codigo, nombre, direccion, telefono, edad, calif_bd, calif_algoritmo, "& _ 
-                "calif_multi, calificacion_vb FROM estudiante"
+                "calif_multi, calificacion_vb, clave FROM estudiante"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -1327,7 +1369,7 @@ Namespace alumnosDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal codigo As Global.System.Nullable(Of Integer), ByVal nombre As String, ByVal direccion As String, ByVal telefono As Global.System.Nullable(Of Integer), ByVal edad As Global.System.Nullable(Of Integer), ByVal calif_bd As Global.System.Nullable(Of Decimal), ByVal calif_algoritmo As Global.System.Nullable(Of Decimal), ByVal calif_multi As Global.System.Nullable(Of Decimal), ByVal calificacion_vb As Global.System.Nullable(Of Decimal)) As Integer
+        Public Overloads Overridable Function Insert(ByVal codigo As Global.System.Nullable(Of Integer), ByVal nombre As String, ByVal direccion As String, ByVal telefono As Global.System.Nullable(Of Integer), ByVal edad As Global.System.Nullable(Of Integer), ByVal calif_bd As Global.System.Nullable(Of Decimal), ByVal calif_algoritmo As Global.System.Nullable(Of Decimal), ByVal calif_multi As Global.System.Nullable(Of Decimal), ByVal calificacion_vb As Global.System.Nullable(Of Decimal), ByVal clave As String) As Integer
             If (codigo.HasValue = true) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = CType(codigo.Value,Integer)
             Else
@@ -1373,6 +1415,11 @@ Namespace alumnosDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(8).Value = Global.System.DBNull.Value
             End If
+            If (clave Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(9).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(9).Value = CType(clave,String)
+            End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -1402,6 +1449,7 @@ Namespace alumnosDataSetTableAdapters
                     ByVal calif_algoritmo As Global.System.Nullable(Of Decimal),  _
                     ByVal calif_multi As Global.System.Nullable(Of Decimal),  _
                     ByVal calificacion_vb As Global.System.Nullable(Of Decimal),  _
+                    ByVal clave As String,  _
                     ByVal Original_Id As Integer,  _
                     ByVal Original_codigo As Global.System.Nullable(Of Integer),  _
                     ByVal Original_telefono As Global.System.Nullable(Of Integer),  _
@@ -1455,55 +1503,60 @@ Namespace alumnosDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(8).Value = Global.System.DBNull.Value
             End If
-            Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_Id,Integer)
-            If (Original_codigo.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_codigo.Value,Integer)
+            If (clave Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(11).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(clave,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_Id,Integer)
+            If (Original_codigo.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Original_codigo.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(12).Value = Global.System.DBNull.Value
             End If
             If (Original_telefono.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_telefono.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_telefono.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = Global.System.DBNull.Value
             End If
             If (Original_edad.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_edad.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(Original_edad.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = Global.System.DBNull.Value
             End If
             If (Original_calif_bd.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(Original_calif_bd.Value,Decimal)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(Original_calif_bd.Value,Decimal)
             Else
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(17).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = Global.System.DBNull.Value
             End If
             If (Original_calif_algoritmo.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(Original_calif_algoritmo.Value,Decimal)
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(Original_calif_algoritmo.Value,Decimal)
             Else
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(19).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = Global.System.DBNull.Value
             End If
             If (Original_calif_multi.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(Original_calif_multi.Value,Decimal)
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(Original_calif_multi.Value,Decimal)
             Else
-                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(21).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(22).Value = Global.System.DBNull.Value
             End If
             If (Original_calificacion_vb.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_calificacion_vb.Value,Decimal)
+                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(Original_calificacion_vb.Value,Decimal)
             Else
-                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(23).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(24).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _

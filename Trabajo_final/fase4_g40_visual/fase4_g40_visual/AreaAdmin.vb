@@ -50,4 +50,15 @@
         Me.Close()
         principal.Show()
     End Sub
+
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+        AccesoEstudiantes.Show()
+        Me.Close()
+
+    End Sub
+
+    Private Sub Button2_Click_2(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        eliminar.Show()
+        Me.Close()
+    End Sub
 End Class

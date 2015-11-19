@@ -193,7 +193,7 @@ Partial Class Modificar
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Por ID", "Por Cedula"})
+        Me.ComboBox1.Items.AddRange(New Object() {"ID", "Cedula"})
         Me.ComboBox1.Location = New System.Drawing.Point(6, 30)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
@@ -229,6 +229,10 @@ Partial Class Modificar
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(867, 544)
+        Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(867, 544)
         Me.Name = "Modificar"
         Me.Text = "Modificar"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

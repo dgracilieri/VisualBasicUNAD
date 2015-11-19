@@ -95,7 +95,9 @@ Partial Class AccesoEstudiantes
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(292, 220)
         Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(292, 220)
         Me.Name = "AccesoEstudiantes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Acceso de Estudiantes"

@@ -33,9 +33,9 @@ Partial Class AccesoAdmin
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(12, 36)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(99, 13)
+        Me.Label1.Size = New System.Drawing.Size(126, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Ingrese Contraseña"
+        Me.Label1.Text = "Ingrese Contraseña (123)"
         '
         'TextBox1
         '
@@ -75,7 +75,9 @@ Partial Class AccesoAdmin
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(293, 177)
         Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(293, 177)
         Me.Name = "AccesoAdmin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Acceso Como Administrador"

@@ -112,12 +112,6 @@
     <Compile Include="AreaAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AreaEstudiantes.Designer.vb">
-      <DependentUpon>AreaEstudiantes.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AreaEstudiantes.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="AreaEstudio.Designer.vb">
       <DependentUpon>AreaEstudio.vb</DependentUpon>
     </Compile>
@@ -152,6 +146,12 @@
       <DependentUpon>ContenidoVB.vb</DependentUpon>
     </Compile>
     <Compile Include="ContenidoVB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eliminar.Designer.vb">
+      <DependentUpon>eliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="eliminar.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Evaluacion.Designer.vb">
@@ -211,6 +211,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="consultar.resx">
       <DependentUpon>consultar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContenidoAlgotirmo.resx">
+      <DependentUpon>ContenidoAlgotirmo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contenidoBD.resx">
+      <DependentUpon>contenidoBD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContenidoMultimedia.resx">
+      <DependentUpon>ContenidoMultimedia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContenidoVB.resx">
+      <DependentUpon>ContenidoVB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eliminar.resx">
+      <DependentUpon>eliminar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Insertar.resx">
       <DependentUpon>Insertar.vb</DependentUpon>

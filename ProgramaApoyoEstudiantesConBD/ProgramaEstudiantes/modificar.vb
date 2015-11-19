@@ -64,7 +64,7 @@
                 MsgBox("Error debe ingresar la Cedula y el programa a que pertenece", MessageBoxIcon.Error, "Error en la actualizacion")
             Else
                 Dim strsql As String = "UPDATE estudiantes SET "
-                strsql += "identificacion =" & ced & ", "
+                strsql += " =" & ced & ", "
                 strsql += "nombre ='" & nom & "', "
                 strsql += "direccion ='" & dir & "', "
                 strsql += "telefono =" & tel & ", "

@@ -133,7 +133,9 @@ Partial Class principal
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(796, 403)
         Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(796, 403)
         Me.Name = "principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Sistema de apoyo estudiantes Ingenieria de Sistemas"
