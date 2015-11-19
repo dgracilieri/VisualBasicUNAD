@@ -30,6 +30,8 @@ Partial Class AreaEstudio
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -90,7 +92,7 @@ Partial Class AreaEstudio
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(507, 229)
+        Me.Button1.Location = New System.Drawing.Point(513, 283)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 8
@@ -99,19 +101,39 @@ Partial Class AreaEstudio
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(612, 229)
+        Me.Button2.Location = New System.Drawing.Point(612, 283)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Enviar"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(336, 228)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(119, 13)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Consultar Calificaciones"
+        '
+        'Button3
+        '
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.Location = New System.Drawing.Point(566, 228)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(22, 22)
+        Me.Button3.TabIndex = 11
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'AreaEstudio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(699, 275)
+        Me.ClientSize = New System.Drawing.Size(699, 328)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox1)
@@ -121,7 +143,6 @@ Partial Class AreaEstudio
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(715, 313)
         Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(715, 313)
         Me.Name = "AreaEstudio"
@@ -140,4 +161,6 @@ Partial Class AreaEstudio
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class
