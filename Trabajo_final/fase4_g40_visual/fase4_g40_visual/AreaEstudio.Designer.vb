@@ -57,9 +57,9 @@ Partial Class AreaEstudio
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(336, 123)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(169, 13)
+        Me.Label2.Size = New System.Drawing.Size(252, 13)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Usted es el estudiante identificado"
+        Me.Label2.Text = "Usted es el estudiante identificado con cedula N° = "
         '
         'Label3
         '
@@ -73,7 +73,7 @@ Partial Class AreaEstudio
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(563, 123)
+        Me.Label4.Location = New System.Drawing.Point(597, 123)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(39, 13)
         Me.Label4.TabIndex = 6
@@ -111,7 +111,7 @@ Partial Class AreaEstudio
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(699, 274)
+        Me.ClientSize = New System.Drawing.Size(699, 275)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox1)
