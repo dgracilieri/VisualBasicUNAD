@@ -30,25 +30,28 @@
         Dim codigo, tel, edad, id As Integer
         Dim nom, dir, clave As String
 
-        codigo = TextBox1.Text
-        tel = TextBox4.Text
-        edad = TextBox5.Text
-        nom = TextBox2.Text
-        dir = TextBox4.Text
-        id = 1
-        clave = TextBox6.Text
+        
 
 
-        While buscarid(id) <> 0
-            id = id + 1
-        End While
-
+       
         'Valido si existe un registro con esa cedula ingresado previamente
+
 
         If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox5.Text = "" Or TextBox6.Text = "" Then
             MsgBox("Error debe diligenciar todos los campos obligatorios para continuar", MessageBoxIcon.Information, "Carga de registros")
             limpiar()
         Else
+            codigo = TextBox1.Text
+            tel = TextBox4.Text
+            edad = TextBox5.Text
+            nom = TextBox2.Text
+            dir = TextBox4.Text
+            id = 1
+            clave = TextBox6.Text
+
+            While buscarid(id) <> 0
+                id = id + 1
+            End While
 
             If buscarced(TextBox1.Text) = 0 Then
 
@@ -68,7 +71,6 @@
                     MsgBox(ex.ToString)
                 End Try
                 limpiar()
-
 
             Else
 

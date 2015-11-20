@@ -24,10 +24,13 @@
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
         If cont = 3 Then
-            MsgBox("Ya agoto su cantidad de intentos debe salir y volver a ingresar")
+            MsgBox("Ya agoto su cantidad de intentos debe salir y volver a ingresar", MsgBoxStyle.Information, "Acceso de Administrador")
 
         End If
-        If TextBox1.Text = 123 Then
+        If TextBox1.Text = "" Then
+            MsgBox("Error de be ingresar  una contraseña", MsgBoxStyle.Exclamation, "Acceso de Administrador")
+
+        ElseIf TextBox1.Text = 123 Then
             AreaAdmin.Show()
             Me.Close()
         ElseIf cont < 3 Then
@@ -37,7 +40,7 @@
         End If
 
 
-        
+
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click

@@ -134,7 +134,7 @@
 
             Try
                 cmd2.ExecuteNonQuery()
-                MsgBox("Registro Modificado Correctamente", MsgBoxStyle.Information)
+                MsgBox("Registro Modificado Correctamente", MsgBoxStyle.Information, "Actualizacion de Registros")
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
@@ -202,7 +202,7 @@
 
             Try
                 cmd2.ExecuteNonQuery()
-                MsgBox("Registro Modificado Correctamente", MsgBoxStyle.Information)
+                MsgBox("Registro Modificado Correctamente", MsgBoxStyle.Information, "Actualizacion de Registros")
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try

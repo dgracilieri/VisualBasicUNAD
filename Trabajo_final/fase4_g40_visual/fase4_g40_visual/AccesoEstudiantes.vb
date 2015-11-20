@@ -52,7 +52,6 @@
         cedula = TextBox1.Text
         clave = TextBox2.Text
         strsql = "SELECT codigo FROM estudiante WHERE codigo=" & cedula & " AND clave='" & clave & "'"
-        MsgBox(strsql.ToString)
         Dim cmd As New OleDb.OleDbCommand(strsql, conn)
         Dim ds As New DataSet, dr As OleDb.OleDbDataReader
         cmd.CommandType = CommandType.Text
@@ -67,7 +66,7 @@
                     AreaEstudio.Show()
                     Me.Close()
                 Else
-                    MsgBox("LA contraseña es errada")
+                    MsgBox("Error de contraseña", MsgBoxStyle.Information, "Area de Estudiantes")
 
                 End If
             Catch ex As Exception
@@ -76,7 +75,7 @@
 
 
         Else
-            MsgBox("El usuario No existe")
+            MsgBox("El usuario No existe", MsgBoxStyle.Information, "Area de Estudiantes")
         End If
     End Sub
 End Class

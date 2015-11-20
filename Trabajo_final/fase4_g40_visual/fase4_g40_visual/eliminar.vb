@@ -73,7 +73,7 @@
                 End If
                 TextBox1.Text = ""
             Else
-                MsgBox("Debe ingresar el ID", MessageBoxIcon.Information)
+                MsgBox("Debe ingresar el ID", MessageBoxIcon.Information, "Resultado de busqueda")
                 TextBox1.Text = ""
             End If
 
@@ -101,7 +101,7 @@
             End If
             TextBox1.Text = ""
         Else
-            MsgBox("Debe ingresar el Cedula", MessageBoxIcon.Information)
+            MsgBox("Debe ingresar el Cedula", MessageBoxIcon.Information, "Resultado de busqueda")
             TextBox1.Text = ""
         End If
 

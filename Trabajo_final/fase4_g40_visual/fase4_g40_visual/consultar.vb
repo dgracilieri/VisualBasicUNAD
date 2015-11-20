@@ -24,7 +24,7 @@
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Dim tam, tamf As Integer
         If ComboBox1.SelectedItem = "" Then
-            MsgBox("Error debe ingresar un criterio de busqueda", MessageBoxIcon.Error, "Busqueda")
+            MsgBox("Error debe ingresar un criterio de busqueda", MessageBoxIcon.Error, "Busqueda de Registros")
         ElseIf ComboBox1.SelectedItem = "ID" Then
 
             llenarTablaid()
@@ -123,8 +123,4 @@
         End If
     End Sub
 
-
-    Private Sub consultar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
