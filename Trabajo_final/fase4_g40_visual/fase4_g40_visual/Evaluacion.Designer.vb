@@ -22,8 +22,19 @@ Partial Class Evaluacion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.SuspendLayout()
+        '
+        'Evaluacion
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Text = "Evaluacion"
+        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "Evaluacion"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Sistema de Evaluacion"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class

@@ -62,7 +62,8 @@ Partial Class consultar
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(207, 75)
+        Me.Button3.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.Button3.Location = New System.Drawing.Point(15, 75)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 4
@@ -71,7 +72,7 @@ Partial Class consultar
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(104, 75)
+        Me.Button2.Location = New System.Drawing.Point(207, 75)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
@@ -80,7 +81,7 @@ Partial Class consultar
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(7, 75)
+        Me.Button1.Location = New System.Drawing.Point(112, 75)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
@@ -124,9 +125,11 @@ Partial Class consultar
         '
         'consultar
         '
+        Me.AcceptButton = Me.Button2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.Button3
         Me.ClientSize = New System.Drawing.Size(861, 254)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)

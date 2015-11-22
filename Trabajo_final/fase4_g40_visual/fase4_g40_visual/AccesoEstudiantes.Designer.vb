@@ -84,10 +84,12 @@ Partial Class AccesoEstudiantes
         '
         'AccesoEstudiantes
         '
+        Me.AcceptButton = Me.Button2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(276, 182)
+        Me.CancelButton = Me.Button1
+        Me.ClientSize = New System.Drawing.Size(276, 181)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button2)

@@ -92,6 +92,7 @@ Partial Class AreaAdmin
         '
         'Button5
         '
+        Me.Button5.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.Location = New System.Drawing.Point(253, 304)
         Me.Button5.Name = "Button5"
@@ -194,6 +195,7 @@ Partial Class AreaAdmin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.Button5
         Me.ClientSize = New System.Drawing.Size(840, 523)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)

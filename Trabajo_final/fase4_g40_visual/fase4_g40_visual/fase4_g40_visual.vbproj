@@ -227,6 +227,9 @@
     <EmbeddedResource Include="eliminar.resx">
       <DependentUpon>eliminar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Evaluacion.resx">
+      <DependentUpon>Evaluacion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Insertar.resx">
       <DependentUpon>Insertar.vb</DependentUpon>
     </EmbeddedResource>

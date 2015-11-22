@@ -82,7 +82,7 @@ Partial Class eliminar
         'Button2
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Location = New System.Drawing.Point(650, 176)
+        Me.Button2.Location = New System.Drawing.Point(668, 176)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 13
@@ -92,7 +92,7 @@ Partial Class eliminar
         'Button1
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Location = New System.Drawing.Point(553, 176)
+        Me.Button1.Location = New System.Drawing.Point(567, 176)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 12
@@ -101,9 +101,11 @@ Partial Class eliminar
         '
         'eliminar
         '
+        Me.AcceptButton = Me.Button2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.Button1
         Me.ClientSize = New System.Drawing.Size(755, 222)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)

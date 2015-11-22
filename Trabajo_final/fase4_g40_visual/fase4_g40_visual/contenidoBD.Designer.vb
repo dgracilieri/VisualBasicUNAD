@@ -24,10 +24,10 @@ Partial Class contenidoBD
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(contenidoBD))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.AxShockwaveFlash1 = New AxShockwaveFlashObjects.AxShockwaveFlash()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.AxShockwaveFlash1 = New AxShockwaveFlashObjects.AxShockwaveFlash()
         Me.Panel1.SuspendLayout()
         CType(Me.AxShockwaveFlash1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -40,8 +40,19 @@ Partial Class contenidoBD
         Me.Panel1.Size = New System.Drawing.Size(910, 522)
         Me.Panel1.TabIndex = 0
         '
+        'AxShockwaveFlash1
+        '
+        Me.AxShockwaveFlash1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.AxShockwaveFlash1.Enabled = True
+        Me.AxShockwaveFlash1.Location = New System.Drawing.Point(0, 0)
+        Me.AxShockwaveFlash1.Name = "AxShockwaveFlash1"
+        Me.AxShockwaveFlash1.OcxState = CType(resources.GetObject("AxShockwaveFlash1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxShockwaveFlash1.Size = New System.Drawing.Size(910, 522)
+        Me.AxShockwaveFlash1.TabIndex = 0
+        '
         'Button1
         '
+        Me.Button1.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button1.Location = New System.Drawing.Point(752, 540)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
@@ -58,25 +69,23 @@ Partial Class contenidoBD
         Me.Button2.Text = "Rendir Examen"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'AxShockwaveFlash1
-        '
-        Me.AxShockwaveFlash1.Enabled = True
-        Me.AxShockwaveFlash1.Location = New System.Drawing.Point(108, 193)
-        Me.AxShockwaveFlash1.Name = "AxShockwaveFlash1"
-        Me.AxShockwaveFlash1.OcxState = CType(resources.GetObject("AxShockwaveFlash1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxShockwaveFlash1.Size = New System.Drawing.Size(192, 192)
-        Me.AxShockwaveFlash1.TabIndex = 0
-        '
         'contenidoBD
         '
+        Me.AcceptButton = Me.Button2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.Button1
         Me.ClientSize = New System.Drawing.Size(934, 575)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(950, 614)
+        Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(950, 614)
         Me.Name = "contenidoBD"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "contenidoBD"
         Me.Panel1.ResumeLayout(False)
         CType(Me.AxShockwaveFlash1, System.ComponentModel.ISupportInitialize).EndInit()

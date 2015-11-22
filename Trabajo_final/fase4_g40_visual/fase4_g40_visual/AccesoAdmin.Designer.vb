@@ -39,7 +39,7 @@ Partial Class AccesoAdmin
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(142, 33)
+        Me.TextBox1.Location = New System.Drawing.Point(144, 33)
         Me.TextBox1.MaxLength = 3
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -48,7 +48,7 @@ Partial Class AccesoAdmin
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(15, 90)
+        Me.Button1.Location = New System.Drawing.Point(63, 90)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
@@ -66,18 +66,20 @@ Partial Class AccesoAdmin
         '
         'AccesoAdmin
         '
+        Me.AcceptButton = Me.Button2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(277, 138)
+        Me.CancelButton = Me.Button1
+        Me.ClientSize = New System.Drawing.Size(255, 127)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(293, 177)
+        Me.MaximumSize = New System.Drawing.Size(271, 166)
         Me.MinimizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(293, 177)
+        Me.MinimumSize = New System.Drawing.Size(271, 166)
         Me.Name = "AccesoAdmin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Acceso Como Administrador"

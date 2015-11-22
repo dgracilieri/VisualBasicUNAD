@@ -21,11 +21,11 @@
             Return cp
         End Get
     End Property
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-
-    End Sub
+    
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Label5.Visible = False
+        DataGridView1.Visible = False
         Me.Close()
         principal.Show()
     End Sub
@@ -36,21 +36,59 @@
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Dim contenido As String
+        Dim valor As Integer = Label4.Text
         contenido = ComboBox1.SelectedItem
+
+        nombre(valor)
+
 
         If contenido = "Algoritmo" Then
             ContenidoAlgotirmo.Show()
+            ContenidoAlgotirmo.Text = "Bienvenido " + nom + " Al sistema de apoyo"
             Me.Close()
         ElseIf contenido = "Estructura de datos en Visual Basic" Then
             ContenidoVB.Show()
+            ContenidoVB.Text = "Bienvenido " + nom + " Al sistema de apoyo"
             Me.Close()
         ElseIf contenido = "Bases de datos" Then
             contenidoBD.Show()
+            contenidoBD.Text = "Bienvenido " + nom + " Al sistema de apoyo"
             Me.Close()
         ElseIf contenido = "Multimedia" Then
             ContenidoMultimedia.Show()
+            ContenidoMultimedia.Text = "Bienvenido " + nom + " Al sistema de apoyo"
             Me.Close()
 
         End If
     End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        calificacion()
+        Label5.Visible = True
+        DataGridView1.Visible = True
+    End Sub
+
+    Private Sub calificacion()
+        Dim ds As New DataSet, dt As New DataTable
+        strsql = "SELECT calif_bd AS BaseDatos, calif_algorit As Algoritmo, calif_multi AS Multimedia, calif_vb AS VisualBasic  "
+        strsql += "FROM estudiante WHERE codigo=" & Label4.Text & ""
+        Dim adp As New OleDb.OleDbDataAdapter(strsql, conn)
+        Dim cmd As New OleDb.OleDbCommand(strsql, conn)
+        cmd.Parameters.AddWithValue("@parametro", Label4.Text)
+        ds.Tables.Add("tabla")
+        adp.Fill(ds.Tables("tabla"))
+        Me.DataGridView1.DataSource = ds.Tables("tabla")
+      
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedValueChanged
+        Label5.Visible = False
+        DataGridView1.Visible = False
+    End Sub
+
+ 
 End Class

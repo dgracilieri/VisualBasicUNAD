@@ -22,6 +22,20 @@
         End Get
     End Property
     Private Sub ContenidoAlgotirmo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Button1.Focus()
+    End Sub
 
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Me.Close()
+        AreaEstudio.Show()
+    End Sub
+
+    Private Sub AxShockwaveFlash1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AxShockwaveFlash1.Enter
+
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Me.Close()
+        Evaluacion.Show()
     End Sub
 End Class
