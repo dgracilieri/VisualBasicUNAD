@@ -196,7 +196,7 @@
                 MsgBox(ex.ToString)
             End Try
 
-        ElseIf materia = "BD" Then
+        ElseIf materia = "Bases de datos" Then
             BD()
             strsql = "UPDATE estudiante SET "
             strsql += "calif_bd =" & promedio & " "
