@@ -22,5 +22,17 @@
         End Get
     End Property
 
+<<<<<<< HEAD
  
+=======
+    Private Sub Evaluacion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        RadioButton1.Checked = False
+
+
+    End Sub
+
+    Private Sub Label6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label6.Click
+
+    End Sub
+>>>>>>> origin/master
 End Class
