@@ -30,12 +30,12 @@
         AreaEstudio.Show()
     End Sub
 
-    Private Sub AxShockwaveFlash1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AxShockwaveFlash1.Enter
-
-    End Sub
-
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Close()
         Evaluacion.Show()
+        Evaluacion.GroupBox1.Enabled = True
+        Evaluacion.GroupBox2.Enabled = False
+        Evaluacion.GroupBox3.Enabled = False
+        Evaluacion.GroupBox4.Enabled = False
     End Sub
 End Class

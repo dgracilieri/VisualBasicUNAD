@@ -96,6 +96,7 @@ Partial Class Evaluacion
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Enabled = False
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(429, 308)
@@ -242,6 +243,7 @@ Partial Class Evaluacion
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label12)
+        Me.GroupBox2.Enabled = False
         Me.GroupBox2.Location = New System.Drawing.Point(447, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(429, 308)
@@ -298,7 +300,7 @@ Partial Class Evaluacion
         '
         Me.ComboBox12.FormattingEnabled = True
         Me.ComboBox12.Items.AddRange(New Object() {"Verdadero", "Falso", "Ninguna de las anteriores"})
-        Me.ComboBox12.Location = New System.Drawing.Point(271, 37)
+        Me.ComboBox12.Location = New System.Drawing.Point(271, 25)
         Me.ComboBox12.Name = "ComboBox12"
         Me.ComboBox12.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox12.TabIndex = 6
@@ -307,28 +309,28 @@ Partial Class Evaluacion
         '
         Me.Label7.Location = New System.Drawing.Point(17, 236)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(192, 54)
+        Me.Label7.Size = New System.Drawing.Size(230, 54)
         Me.Label7.TabIndex = 5
-        Me.Label7.Text = "Un ejemplo de una estructura secuencial es : " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SI <condicion> ENTONCES  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " instru" & _
-            "cciones " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FIN de SI "
+        Me.Label7.Text = "La estructura basica de una consulta es" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT (columna1,, ....) TABLE name_tabl" & _
+            "a WHERE mientras_cumpla_condicion." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(18, 193)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(191, 13)
+        Me.Label8.Size = New System.Drawing.Size(193, 13)
         Me.Label8.TabIndex = 4
-        Me.Label8.Text = "Solo manejan estructuras secuenciales"
+        Me.Label8.Text = "Solo manejan un tipo limitados de datos"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(18, 156)
+        Me.Label9.Location = New System.Drawing.Point(18, 159)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(192, 13)
+        Me.Label9.Size = New System.Drawing.Size(219, 13)
         Me.Label9.TabIndex = 3
-        Me.Label9.Text = "No se utilizan variables solo constantes"
+        Me.Label9.Text = "Ayudan a mantener la integridad de los datos"
         '
         'Label10
         '
@@ -336,25 +338,24 @@ Partial Class Evaluacion
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(229, 39)
         Me.Label10.TabIndex = 2
-        Me.Label10.Text = "El Pseudocodigo es una descripcion a alto nivel de un algoritmo"
+        Me.Label10.Text = "Los DBMS permiten almacenar y acceder a los datos muy rapidamente"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(18, 76)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(205, 13)
+        Me.Label11.Size = New System.Drawing.Size(203, 26)
         Me.Label11.TabIndex = 1
-        Me.Label11.Text = "Se relacciona unicamente con informatica"
+        Me.Label11.Text = "Las Base de datos Estaticas son aquellas" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "donde la informacion puede modificarse"
         '
         'Label12
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(18, 37)
+        Me.Label12.Location = New System.Drawing.Point(17, 25)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(159, 13)
+        Me.Label12.Size = New System.Drawing.Size(247, 39)
         Me.Label12.TabIndex = 0
-        Me.Label12.Text = "Es un lenguaje de programacion"
+        Me.Label12.Text = "Se llama Base de datos bancos de informacion" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " de diversas tematicas"
         '
         'GroupBox3
         '
@@ -370,6 +371,7 @@ Partial Class Evaluacion
         Me.GroupBox3.Controls.Add(Me.Label16)
         Me.GroupBox3.Controls.Add(Me.Label17)
         Me.GroupBox3.Controls.Add(Me.Label18)
+        Me.GroupBox3.Enabled = False
         Me.GroupBox3.Location = New System.Drawing.Point(12, 326)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(429, 308)
@@ -498,6 +500,7 @@ Partial Class Evaluacion
         Me.GroupBox4.Controls.Add(Me.Label22)
         Me.GroupBox4.Controls.Add(Me.Label23)
         Me.GroupBox4.Controls.Add(Me.Label24)
+        Me.GroupBox4.Enabled = False
         Me.GroupBox4.Location = New System.Drawing.Point(447, 326)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(429, 308)

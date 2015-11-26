@@ -2,7 +2,8 @@
 Module ModuloFunciones
 
     Public cont As Integer = 0
-    Public strsql, valor, area, nom As String
+    Public codigo, promedio As Integer
+    Public strsql, valor, area, nom, materia As String
     Public conn As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & _
     Application.StartupPath & "\alumnos.accdb")
     

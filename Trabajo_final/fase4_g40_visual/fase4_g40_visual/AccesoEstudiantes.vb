@@ -62,7 +62,7 @@
                 dr = cmd.ExecuteReader
                 dr.Read()
                 If dr.HasRows Then
-                    AreaEstudio.Label4.Text = dr(0)
+                    codigo = dr(0)
                     AreaEstudio.Show()
                     Me.Close()
                 Else

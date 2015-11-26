@@ -21,18 +21,229 @@
             Return cp
         End Get
     End Property
-
-<<<<<<< HEAD
- 
-=======
-    Private Sub Evaluacion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        RadioButton1.Checked = False
+    Private Sub Algoritmos()
+        Dim notas1, notas2, notas3, notas4, notas5, notas6 As Integer
 
 
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas1 = 0.83
+        Else
+            notas1 = 0.83
+        End If
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas2 = 0.83
+        Else
+            notas2 = 0
+        End If
+        If ComboBox1.SelectedItem = "Verdadero" Then
+            notas3 = 0.83
+        Else
+            notas3 = 0
+        End If
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas4 = 0.83
+        Else
+            notas4 = 0
+        End If
+
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas5 = 0.83
+        Else
+            notas5 = 0
+        End If
+
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas6 = 1
+        Else
+            notas6 = 0
+        End If
+        promedio = (Val(notas1) + Val(notas2) + Val(notas3) + Val(notas4) + Val(notas5) + Val(notas6))
+    End Sub
+    Private Sub BD()
+        Dim notas1, notas2, notas3, notas4, notas5, notas6 As Integer
+
+
+        If ComboBox1.SelectedItem = "Verdadero" Then
+            notas1 = 0.83
+        Else
+            notas1 = 0.83
+        End If
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas2 = 0.83
+        Else
+            notas2 = 0
+        End If
+        If ComboBox1.SelectedItem = "Verdadero" Then
+            notas3 = 0.83
+        Else
+            notas3 = 0
+        End If
+        If ComboBox1.SelectedItem = "Verdadero" Then
+            notas4 = 0.83
+        Else
+            notas4 = 0
+        End If
+
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas5 = 0.83
+        Else
+            notas5 = 0
+        End If
+
+        If ComboBox1.SelectedItem = "Verdadero" Then
+            notas6 = 1
+        Else
+            notas6 = 0
+        End If
+        promedio = (Val(notas1) + Val(notas2) + Val(notas3) + Val(notas4) + Val(notas5) + Val(notas6))
+    End Sub
+    Private Sub VB()
+        Dim notas1, notas2, notas3, notas4, notas5, notas6 As Integer
+
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas1 = 0.83
+        Else
+            notas1 = 0.83
+        End If
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas2 = 0.83
+        Else
+            notas2 = 0
+        End If
+        If ComboBox1.SelectedItem = "Verdadero" Then
+            notas3 = 0.83
+        Else
+            notas3 = 0
+        End If
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas4 = 0.83
+        Else
+            notas4 = 0
+        End If
+
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas5 = 0.83
+        Else
+            notas5 = 0
+        End If
+
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas6 = 1
+        Else
+            notas6 = 0
+        End If
+        promedio = (Val(notas1) + Val(notas2) + Val(notas3) + Val(notas4) + Val(notas5) + Val(notas6))
+    End Sub
+    Private Sub Multimedia()
+        Dim notas1, notas2, notas3, notas4, notas5, notas6 As Integer
+
+
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas1 = 0.83
+        Else
+            notas1 = 0.83
+        End If
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas2 = 0.83
+        Else
+            notas2 = 0
+        End If
+        If ComboBox1.SelectedItem = "Verdadero" Then
+            notas3 = 0.83
+        Else
+            notas3 = 0
+        End If
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas4 = 0.83
+        Else
+            notas4 = 0
+        End If
+
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas5 = 0.83
+        Else
+            notas5 = 0
+        End If
+
+        If ComboBox1.SelectedItem = "Falso" Then
+            notas6 = 1
+        Else
+            notas6 = 0
+        End If
+        promedio = (Val(notas1) + Val(notas2) + Val(notas3) + Val(notas4) + Val(notas5) + Val(notas6))
     End Sub
 
-    Private Sub Label6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label6.Click
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Me.Close()
+        AreaEstudio.Show()
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        If materia = "Algoritmo" Then
+            Algoritmos()
+            strsql = "UPDATE estudiante SET "
+            strsql += "calif_algorit =" & promedio & " "
+            strsql += "WHERE codigo = " & codigo & ""
+            Dim cmd As New OleDb.OleDbCommand
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = conn
+            cmd.CommandText = strsql
+            Try
+                cmd.ExecuteNonQuery()
+                MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+
+        ElseIf materia = "BD" Then
+            BD()
+            strsql = "UPDATE estudiante SET "
+            strsql += "calif_bd =" & promedio & " "
+            strsql += "WHERE codigo = " & codigo & ""
+            Dim cmd As New OleDb.OleDbCommand
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = conn
+            cmd.CommandText = strsql
+            Try
+                cmd.ExecuteNonQuery()
+                MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+        ElseIf materia = "Visual Basic" Then
+            VB()
+            strsql = "UPDATE estudiante SET "
+            strsql += "calif_vb =" & promedio & " "
+            strsql += "WHERE codigo = " & codigo & ""
+            Dim cmd As New OleDb.OleDbCommand
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = conn
+            cmd.CommandText = strsql
+            Try
+                cmd.ExecuteNonQuery()
+                MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+        ElseIf materia = "Multimedia" Then
+            Multimedia()
+            strsql = "UPDATE estudiante SET "
+            strsql += "calif_multi =" & promedio & " "
+            strsql += "WHERE codigo = " & codigo & ""
+            Dim cmd As New OleDb.OleDbCommand
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = conn
+            cmd.CommandText = strsql
+            Try
+                cmd.ExecuteNonQuery()
+                MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+        End If
+
+        
 
     End Sub
->>>>>>> origin/master
 End Class

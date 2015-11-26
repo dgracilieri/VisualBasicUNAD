@@ -33,5 +33,9 @@
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Close()
         Evaluacion.Show()
+        Evaluacion.GroupBox1.Enabled = False
+        Evaluacion.GroupBox2.Enabled = False
+        Evaluacion.GroupBox3.Enabled = True
+        Evaluacion.GroupBox4.Enabled = False
     End Sub
 End Class
