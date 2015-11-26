@@ -22,9 +22,5 @@
         End Get
     End Property
 
-    Private Sub Evaluacion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        RadioButton1.Checked = False
-
-
-    End Sub
+ 
 End Class

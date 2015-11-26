@@ -65,7 +65,7 @@ Partial Class ContenidoAlgoritmo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(952, 656)
+        Me.ClientSize = New System.Drawing.Size(952, 655)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Panel1)
         Me.MaximizeBox = False
