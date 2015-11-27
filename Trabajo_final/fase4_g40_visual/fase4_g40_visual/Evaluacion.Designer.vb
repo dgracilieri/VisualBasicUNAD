@@ -611,9 +611,9 @@ Partial Class Evaluacion
         Me.Label24.AutoSize = True
         Me.Label24.Location = New System.Drawing.Point(18, 37)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(159, 13)
+        Me.Label24.Size = New System.Drawing.Size(215, 26)
         Me.Label24.TabIndex = 0
-        Me.Label24.Text = "Es un lenguaje de programacion"
+        Me.Label24.Text = "El tipo String es un tipo de dato que permite " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "almacenar cadena de caracteres"
         '
         'Evaluacion
         '

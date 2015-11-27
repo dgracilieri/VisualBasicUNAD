@@ -100,7 +100,7 @@
     Private Sub VB()
         Dim notas1, notas2, notas3, notas4, notas5, notas6 As Integer
 
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox1.SelectedItem = "Verdadero" Then
             notas1 = 0.83
         Else
             notas1 = 0.83
@@ -191,7 +191,7 @@
             cmd.CommandText = strsql
             Try
                 cmd.ExecuteNonQuery()
-                MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+                'MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
@@ -207,7 +207,7 @@
             cmd.CommandText = strsql
             Try
                 cmd.ExecuteNonQuery()
-                MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+                'MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
@@ -222,7 +222,7 @@
             cmd.CommandText = strsql
             Try
                 cmd.ExecuteNonQuery()
-                MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+                'MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
@@ -237,7 +237,7 @@
             cmd.CommandText = strsql
             Try
                 cmd.ExecuteNonQuery()
-                MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+                'MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
