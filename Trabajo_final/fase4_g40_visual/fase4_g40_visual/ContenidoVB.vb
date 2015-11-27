@@ -38,4 +38,8 @@
         Evaluacion.GroupBox3.Enabled = False
         Evaluacion.GroupBox4.Enabled = True
     End Sub
+
+    Private Sub AxShockwaveFlash1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AxShockwaveFlash1.Enter
+
+    End Sub
 End Class

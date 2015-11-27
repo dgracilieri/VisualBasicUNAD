@@ -512,7 +512,7 @@ Partial Class Evaluacion
         '
         Me.ComboBox19.FormattingEnabled = True
         Me.ComboBox19.Items.AddRange(New Object() {"Verdadero", "Falso", "Ninguna de las anteriores"})
-        Me.ComboBox19.Location = New System.Drawing.Point(271, 236)
+        Me.ComboBox19.Location = New System.Drawing.Point(271, 254)
         Me.ComboBox19.Name = "ComboBox19"
         Me.ComboBox19.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox19.TabIndex = 11
@@ -521,7 +521,7 @@ Partial Class Evaluacion
         '
         Me.ComboBox20.FormattingEnabled = True
         Me.ComboBox20.Items.AddRange(New Object() {"Verdadero", "Falso", "Ninguna de las anteriores"})
-        Me.ComboBox20.Location = New System.Drawing.Point(271, 193)
+        Me.ComboBox20.Location = New System.Drawing.Point(271, 208)
         Me.ComboBox20.Name = "ComboBox20"
         Me.ComboBox20.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox20.TabIndex = 10
@@ -564,30 +564,31 @@ Partial Class Evaluacion
         '
         'Label19
         '
-        Me.Label19.Location = New System.Drawing.Point(17, 236)
+        Me.Label19.Location = New System.Drawing.Point(17, 254)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(192, 54)
+        Me.Label19.Size = New System.Drawing.Size(241, 36)
         Me.Label19.TabIndex = 5
-        Me.Label19.Text = "Un ejemplo de una estructura secuencial es : " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SI <condicion> ENTONCES  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " instru" & _
-            "cciones " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FIN de SI "
+        Me.Label19.Text = "Para imprimir el contenido de una variable" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "integer la instruccion es variable.to" & _
+            "string"
         '
         'Label20
         '
         Me.Label20.AutoSize = True
         Me.Label20.Location = New System.Drawing.Point(18, 193)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(191, 13)
+        Me.Label20.Size = New System.Drawing.Size(242, 52)
         Me.Label20.TabIndex = 4
-        Me.Label20.Text = "Solo manejan estructuras secuenciales"
+        Me.Label20.Text = "La estructura de un condicional en VisualBasic es" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "IF <condicion> THEN" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "    instr" & _
+            "uciones" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "END"
         '
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(18, 156)
+        Me.Label21.Location = New System.Drawing.Point(18, 164)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(192, 13)
+        Me.Label21.Size = New System.Drawing.Size(219, 13)
         Me.Label21.TabIndex = 3
-        Me.Label21.Text = "No se utilizan variables solo constantes"
+        Me.Label21.Text = "La funcion para convertir a un entero es CStr"
         '
         'Label22
         '
@@ -595,7 +596,7 @@ Partial Class Evaluacion
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(229, 39)
         Me.Label22.TabIndex = 2
-        Me.Label22.Text = "El Pseudocodigo es una descripcion a alto nivel de un algoritmo"
+        Me.Label22.Text = "La forma correcta de declarar una" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "variable es Dim nombre AS tipo_Variable"
         '
         'Label23
         '

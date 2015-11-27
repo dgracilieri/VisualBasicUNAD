@@ -75,7 +75,7 @@ Partial Class ContenidoVB
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.CancelButton = Me.Button1
-        Me.ClientSize = New System.Drawing.Size(934, 575)
+        Me.ClientSize = New System.Drawing.Size(934, 576)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)

@@ -127,7 +127,7 @@
             notas5 = 0
         End If
 
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox1.SelectedItem = "Verdadero" Then
             notas6 = 1
         Else
             notas6 = 0
