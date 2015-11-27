@@ -602,9 +602,9 @@ Partial Class Evaluacion
         Me.Label23.AutoSize = True
         Me.Label23.Location = New System.Drawing.Point(18, 76)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(205, 13)
+        Me.Label23.Size = New System.Drawing.Size(184, 26)
         Me.Label23.TabIndex = 1
-        Me.Label23.Text = "Se relacciona unicamente con informatica"
+        Me.Label23.Text = "Lss variables solo se pueden declarar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "como Public o Private"
         '
         'Label24
         '
