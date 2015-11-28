@@ -30,29 +30,29 @@
         Else
             notas1 = 0.83
         End If
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox2.SelectedItem = "Falso" Then
             notas2 = 0.83
         Else
             notas2 = 0
         End If
-        If ComboBox1.SelectedItem = "Verdadero" Then
+        If ComboBox3.SelectedItem = "Verdadero" Then
             notas3 = 0.83
         Else
             notas3 = 0
         End If
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox4.SelectedItem = "Falso" Then
             notas4 = 0.83
         Else
             notas4 = 0
         End If
 
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox5.SelectedItem = "Falso" Then
             notas5 = 0.83
         Else
             notas5 = 0
         End If
 
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox6.SelectedItem = "Falso" Then
             notas6 = 1
         Else
             notas6 = 0
@@ -63,34 +63,34 @@
         Dim notas1, notas2, notas3, notas4, notas5, notas6 As Integer
 
 
-        If ComboBox1.SelectedItem = "Verdadero" Then
+        If ComboBox12.SelectedItem = "Verdadero" Then
             notas1 = 0.83
         Else
             notas1 = 0.83
         End If
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox11.SelectedItem = "Falso" Then
             notas2 = 0.83
         Else
             notas2 = 0
         End If
-        If ComboBox1.SelectedItem = "Verdadero" Then
+        If ComboBox10.SelectedItem = "Verdadero" Then
             notas3 = 0.83
         Else
             notas3 = 0
         End If
-        If ComboBox1.SelectedItem = "Verdadero" Then
+        If ComboBox9.SelectedItem = "Verdadero" Then
             notas4 = 0.83
         Else
             notas4 = 0
         End If
 
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox8.SelectedItem = "Falso" Then
             notas5 = 0.83
         Else
             notas5 = 0
         End If
 
-        If ComboBox1.SelectedItem = "Verdadero" Then
+        If ComboBox7.SelectedItem = "Verdadero" Then
             notas6 = 1
         Else
             notas6 = 0
@@ -100,34 +100,34 @@
     Private Sub VB()
         Dim notas1, notas2, notas3, notas4, notas5, notas6 As Integer
 
-        If ComboBox1.SelectedItem = "Verdadero" Then
+        If ComboBox24.SelectedItem = "Verdadero" Then
             notas1 = 0.83
         Else
             notas1 = 0.83
         End If
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox23.SelectedItem = "Falso" Then
             notas2 = 0.83
         Else
             notas2 = 0
         End If
-        If ComboBox1.SelectedItem = "Verdadero" Then
+        If ComboBox22.SelectedItem = "Verdadero" Then
             notas3 = 0.83
         Else
             notas3 = 0
         End If
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox21.SelectedItem = "Falso" Then
             notas4 = 0.83
         Else
             notas4 = 0
         End If
 
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox20.SelectedItem = "Falso" Then
             notas5 = 0.83
         Else
             notas5 = 0
         End If
 
-        If ComboBox1.SelectedItem = "Verdadero" Then
+        If ComboBox19.SelectedItem = "Verdadero" Then
             notas6 = 1
         Else
             notas6 = 0
@@ -138,34 +138,34 @@
         Dim notas1, notas2, notas3, notas4, notas5, notas6 As Integer
 
 
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox18.SelectedItem = "Verdadero" Then
             notas1 = 0.83
         Else
             notas1 = 0.83
         End If
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox17.SelectedItem = "Falso" Then
             notas2 = 0.83
         Else
             notas2 = 0
         End If
-        If ComboBox1.SelectedItem = "Verdadero" Then
+        If ComboBox16.SelectedItem = "Verdadero" Then
             notas3 = 0.83
         Else
             notas3 = 0
         End If
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox15.SelectedItem = "Falso" Then
             notas4 = 0.83
         Else
             notas4 = 0
         End If
 
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox14.SelectedItem = "Falso" Then
             notas5 = 0.83
         Else
             notas5 = 0
         End If
 
-        If ComboBox1.SelectedItem = "Falso" Then
+        If ComboBox13.SelectedItem = "Verdadero" Then
             notas6 = 1
         Else
             notas6 = 0
@@ -191,7 +191,13 @@
             cmd.CommandText = strsql
             Try
                 cmd.ExecuteNonQuery()
-                'MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+                ComboBox1.SelectedIndex = -1
+                ComboBox2.SelectedIndex = -1
+                ComboBox3.SelectedIndex = -1
+                ComboBox4.SelectedIndex = -1
+                ComboBox5.SelectedIndex = -1
+                ComboBox6.SelectedIndex = -1
+
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
@@ -207,7 +213,12 @@
             cmd.CommandText = strsql
             Try
                 cmd.ExecuteNonQuery()
-                'MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+                ComboBox12.SelectedIndex = -1
+                ComboBox11.SelectedIndex = -1
+                ComboBox10.SelectedIndex = -1
+                ComboBox9.SelectedIndex = -1
+                ComboBox8.SelectedIndex = -1
+                ComboBox7.SelectedIndex = -1
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
@@ -222,7 +233,12 @@
             cmd.CommandText = strsql
             Try
                 cmd.ExecuteNonQuery()
-                'MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+                ComboBox24.SelectedIndex = -1
+                ComboBox23.SelectedIndex = -1
+                ComboBox22.SelectedIndex = -1
+                ComboBox21.SelectedIndex = -1
+                ComboBox20.SelectedIndex = -1
+                ComboBox19.SelectedIndex = -1
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
@@ -237,7 +253,12 @@
             cmd.CommandText = strsql
             Try
                 cmd.ExecuteNonQuery()
-                'MsgBox("Nota actualizada Correctamente", MsgBoxStyle.Information, "Actualizacion de Notas")
+                ComboBox18.SelectedIndex = -1
+                ComboBox17.SelectedIndex = -1
+                ComboBox16.SelectedIndex = -1
+                ComboBox15.SelectedIndex = -1
+                ComboBox14.SelectedIndex = -1
+                ComboBox13.SelectedIndex = -1
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try

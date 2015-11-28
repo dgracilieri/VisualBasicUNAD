@@ -428,7 +428,7 @@ Partial Class Evaluacion
         '
         Me.ComboBox18.FormattingEnabled = True
         Me.ComboBox18.Items.AddRange(New Object() {"Verdadero", "Falso", "Ninguna de las anteriores"})
-        Me.ComboBox18.Location = New System.Drawing.Point(271, 37)
+        Me.ComboBox18.Location = New System.Drawing.Point(271, 24)
         Me.ComboBox18.Name = "ComboBox18"
         Me.ComboBox18.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox18.TabIndex = 6
@@ -437,54 +437,54 @@ Partial Class Evaluacion
         '
         Me.Label13.Location = New System.Drawing.Point(17, 236)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(192, 54)
+        Me.Label13.Size = New System.Drawing.Size(248, 54)
         Me.Label13.TabIndex = 5
-        Me.Label13.Text = "Un ejemplo de una estructura secuencial es : " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SI <condicion> ENTONCES  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " instru" & _
-            "cciones " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FIN de SI "
+        Me.Label13.Text = "La mutimedia comercail encontramos diversos productoscomo Base de datos, ofertas," & _
+            " catalogos, etc"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Location = New System.Drawing.Point(18, 193)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(191, 13)
+        Me.Label14.Size = New System.Drawing.Size(206, 26)
         Me.Label14.TabIndex = 4
-        Me.Label14.Text = "Solo manejan estructuras secuenciales"
+        Me.Label14.Text = "La multimedia informativa esta relacionada" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "con los procesos educativos"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Location = New System.Drawing.Point(18, 156)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(192, 13)
+        Me.Label15.Size = New System.Drawing.Size(189, 26)
         Me.Label15.TabIndex = 3
-        Me.Label15.Text = "No se utilizan variables solo constantes"
+        Me.Label15.Text = "La creacion de un prototipo multimedia" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "no es tan importante"
         '
         'Label16
         '
         Me.Label16.Location = New System.Drawing.Point(18, 117)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(229, 39)
+        Me.Label16.Size = New System.Drawing.Size(247, 39)
         Me.Label16.TabIndex = 2
-        Me.Label16.Text = "El Pseudocodigo es una descripcion a alto nivel de un algoritmo"
+        Me.Label16.Text = "Los siguientes son tipos de informacion multimedia" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Graficos, textos"
         '
         'Label17
         '
         Me.Label17.AutoSize = True
         Me.Label17.Location = New System.Drawing.Point(18, 76)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(205, 13)
+        Me.Label17.Size = New System.Drawing.Size(210, 26)
         Me.Label17.TabIndex = 1
-        Me.Label17.Text = "Se relacciona unicamente con informatica"
+        Me.Label17.Text = "Multimedia interactiva es cuando el usuario" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "tiene un control limitado del conten" & _
+            "ido"
         '
         'Label18
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(18, 37)
+        Me.Label18.Location = New System.Drawing.Point(17, 24)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(159, 13)
+        Me.Label18.Size = New System.Drawing.Size(229, 39)
         Me.Label18.TabIndex = 0
-        Me.Label18.Text = "Es un lenguaje de programacion"
+        Me.Label18.Text = "El término multimedia se utiliza para referirse" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " a cualquier objeto o sistema"
         '
         'GroupBox4
         '
